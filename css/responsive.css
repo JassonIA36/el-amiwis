@@ -8,10 +8,10 @@ img, video { max-width: 100%; height: auto; }
 /* Títulos: nunca desbordar la pantalla */
 h1, h2, h3, h4 { overflow-wrap: break-word; }
 
-/* Escala tipográfica fluida (el config de Tailwind fija 56px/40px en todas las pantallas) */
-@media (max-width: 1023px) {
-  .text-headline-xl { font-size: clamp(1.875rem, 7.5vw, 3rem) !important; line-height: 1.12 !important; }
-  .text-headline-lg { font-size: clamp(1.5rem, 5.5vw, 2rem) !important; line-height: 1.2 !important; }
+/* Escala tipográfica fluida */
+@media (max-width: 1279px) {
+  .text-headline-xl { font-size: clamp(1.875rem, 6vw, 3rem) !important; line-height: 1.12 !important; }
+  .text-headline-lg { font-size: clamp(1.5rem, 4.5vw, 2.25rem) !important; line-height: 1.2 !important; }
 }
 @media (max-width: 639px) {
   .text-headline-md { font-size: 1.5rem !important; line-height: 1.75rem !important; }
@@ -34,7 +34,7 @@ h1, h2, h3, h4 { overflow-wrap: break-word; }
 }
 #mobile-menu:not(.hidden) { display: flex; }
 #mobile-menu a { min-height: 44px; }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   #mobile-menu { display: none !important; }
 }
 #mobile-menu-btn { transition: background-color .2s, color .2s; }
