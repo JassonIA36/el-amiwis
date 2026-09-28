@@ -222,9 +222,13 @@
           </div>
 
           <div class="flex-1 w-full max-w-xl relative">
-            <div class="relative w-full h-[420px] rounded-xl overflow-hidden bg-surface-container shadow-2xl border border-white/5">
-              <img class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" alt="Instalación de hardware" src="assets/software-perifericos.png"/>
-              <div class="absolute inset-0 bg-gradient-to-t from-background via-surface-container/60 to-transparent"></div>
+            <div class="relative w-full h-[420px] rounded-2xl overflow-hidden bg-surface-container shadow-2xl border border-white/5">
+              <img class="w-full h-full object-cover object-center hover:scale-[1.03] transition-transform duration-700 ease-out" alt="Periféricos gaming y hardware de alto rendimiento" src="assets/computadoras-gpu.png"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-surface-container/40 to-transparent"></div>
+              <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow border border-white/10">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                HARDWARE DE GRADO PROFESIONAL
+              </div>
               <div class="absolute bottom-space-md left-space-md right-space-md p-space-md rounded-xl bg-surface/90 backdrop-blur-xl shadow-xl flex items-center justify-between gap-space-sm border border-white/5">
                 <div class="flex items-center gap-space-sm">
                   <div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center shrink-0">
@@ -376,7 +380,85 @@
         </div>
       </section>
 
-      <!-- BANNER FINAL DE CONVERSIÓN -->
+      <!-- CATÁLOGO DE HARDWARE & PERIFÉRICOS -->
+      <section id="catalogo-hardware" class="w-full px-gutter-lg py-margin-lg bg-background">
+        <div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+          <div>
+            <span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">// MOD_02 :: HARDWARE Y PERIFÉRICOS</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface mt-1 font-bold">Equipamiento de Alto Rendimiento</h2>
+          </div>
+
+          <!-- Periféricos: imagen + lista de productos -->
+          <div class="relative w-full rounded-2xl overflow-hidden bg-surface-container shadow-2xl border border-white/5">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+              <!-- Imagen real: GPU & setup -->
+              <div class="relative overflow-hidden group min-h-[360px]">
+                <img alt="Instalación de SSD NVMe – Upgrade de almacenamiento" class="w-full h-full object-cover object-center group-hover:scale-[1.04] transition-transform duration-700 ease-out" src="assets/instalacion-ssd.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent to-surface-container/80 pointer-events-none"></div>
+                <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow border border-white/10">
+                  <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  ALMACENAMIENTO // NVMe Gen4
+                </div>
+              </div>
+              <!-- Catálogo de periféricos -->
+              <div class="p-space-lg flex flex-col gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Periféricos &amp; Almacenamiento</span>
+                  <h3 class="font-headline-md text-headline-md text-on-surface font-bold">Instalación, Configuración y Venta</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Desde teclados mecánicos hasta SSDs NVMe de última generación. Instalamos, configuramos y optimizamos cada componente para máximo rendimiento.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-high border border-white/5 hover-card-lift group">
+                    <div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center shrink-0 group-hover:bg-tertiary/20 transition-colors">
+                      <span class="material-symbols-outlined text-tertiary text-[22px]">storage</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface font-semibold">SSDs NVMe M.2 Gen4</span>
+                      <span class="font-body-sm text-body-sm text-on-surface-variant">Samsung 990 Pro, WD Black SN850X – hasta 7200 MB/s</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-high border border-white/5 hover-card-lift group">
+                    <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                      <span class="material-symbols-outlined text-primary text-[22px]">keyboard</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface font-semibold">Teclados Mecánicos</span>
+                      <span class="font-body-sm text-body-sm text-on-surface-variant">Switches Cherry MX, Gateron – retroiluminación RGB</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-high border border-white/5 hover-card-lift group">
+                    <div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0 group-hover:bg-secondary/20 transition-colors">
+                      <span class="material-symbols-outlined text-secondary text-[22px]">mouse</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface font-semibold">Ratones Gaming &amp; Ergonómicos</span>
+                      <span class="font-body-sm text-body-sm text-on-surface-variant">Logitech G Pro X, Razer DeathAdder V3 – sensor óptico 30K DPI</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-high border border-white/5 hover-card-lift group">
+                    <div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center shrink-0 group-hover:bg-tertiary/20 transition-colors">
+                      <span class="material-symbols-outlined text-tertiary text-[22px]">monitor</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface font-semibold">Monitores 4K &amp; 144Hz+</span>
+                      <span class="font-body-sm text-body-sm text-on-surface-variant">LG UltraGear, ASUS ROG – paneles IPS/OLED con G-Sync</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm border-t border-white/10">
+                  <a href="https://wa.me/573024555428?text=Consulta%20por%20perif%C3%A9ricos%20y%20hardware" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold uppercase tracking-wider hover:brightness-110 hover:scale-[1.02] transition-all shadow-[0_0_16px_rgba(170,2,102,0.3)]">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span>Consultar Disponibilidad</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
       <section class="w-full bg-gradient-to-b from-surface-container-low to-surface-container-lowest px-gutter-lg py-margin-lg">
         <div class="max-w-5xl mx-auto rounded-xl bg-surface-container p-space-xl shadow-2xl relative overflow-hidden flex flex-col items-center text-center gap-space-md border border-white/5">
           <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-gradient-to-r from-primary/20 via-secondary/20 to-tertiary/20 blur-3xl pointer-events-none"></div>
