@@ -1,0 +1,46 @@
+/* ===== Responsive + menú móvil — Pedro Roa ===== */
+/* Cargar DESPUÉS de css/styles.css */
+
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 5rem; }
+html, body { max-width: 100%; overflow-x: hidden; }
+img, video { max-width: 100%; height: auto; }
+
+/* Títulos: nunca desbordar la pantalla */
+h1, h2, h3, h4 { overflow-wrap: break-word; }
+
+/* Escala tipográfica fluida (el config de Tailwind fija 56px/40px en todas las pantallas) */
+@media (max-width: 1023px) {
+  .text-headline-xl { font-size: clamp(1.875rem, 7.5vw, 3rem) !important; line-height: 1.12 !important; }
+  .text-headline-lg { font-size: clamp(1.5rem, 5.5vw, 2rem) !important; line-height: 1.2 !important; }
+}
+@media (max-width: 639px) {
+  .text-headline-md { font-size: 1.5rem !important; line-height: 1.75rem !important; }
+  .text-body-lg     { font-size: 1rem !important;   line-height: 1.6rem !important; }
+}
+
+/* Celulares: menos margen lateral y botones que no se salen */
+@media (max-width: 479px) {
+  .px-gutter-lg { padding-left: 1rem !important; padding-right: 1rem !important; }
+  a[class*="px-space-xl"] { padding-left: 1rem !important; padding-right: 1rem !important; }
+  a.inline-flex { max-width: 100%; text-align: center; }
+}
+
+/* ===== Menú desplegable móvil ===== */
+#mobile-menu {
+  max-height: calc(100vh - 5rem);
+  max-height: calc(100dvh - 5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+#mobile-menu:not(.hidden) { display: flex; }
+#mobile-menu a { min-height: 44px; }
+@media (min-width: 1280px) {
+  #mobile-menu { display: none !important; }
+}
+#mobile-menu-btn { transition: background-color .2s, color .2s; }
+#mobile-menu-btn:focus-visible,
+#mobile-menu a:focus-visible { outline: 2px solid #ddb7ff; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

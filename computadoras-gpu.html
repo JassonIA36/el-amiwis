@@ -14,6 +14,7 @@
   
   <!-- External Stylesheet -->
   <link href="css/styles.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script id="tailwind-config">
@@ -128,12 +129,12 @@
 
   <!-- HEADER NAVBAR -->
   <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
-    <div class="h-20 w-full px-gutter-lg flex items-center justify-between gap-space-md">
+    <div class="h-20 w-full px-4 sm:px-gutter-lg flex items-center justify-between gap-space-sm sm:gap-space-md">
       <a href="index.html" class="flex items-center gap-space-md shrink-0 group">
         <img alt="Pedro Roa Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="assets/logo.png"/>
         <div class="flex flex-col">
           <span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none group-hover:text-primary transition-colors">PEDRO ROA</span>
-          <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mt-space-xs">Servicio Técnico Especializado</span>
+          <span class="hidden sm:block font-label-sm text-label-sm text-primary uppercase tracking-widest mt-space-xs">Servicio Técnico Especializado</span>
         </div>
       </a>
 
@@ -150,19 +151,19 @@
           <span class="material-symbols-outlined text-[18px] text-tertiary">call</span>
           <span>+57 302 4555428</span>
         </a>
-        <a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold shadow-[0_0_16px_rgba(170,2,102,0.4)] hover:brightness-110 hover:scale-105 transition-all uppercase tracking-wider" href="https://wa.me/573024555428" rel="noopener noreferrer" target="_blank">
+        <a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold shadow-[0_0_16px_rgba(170,2,102,0.4)] hover:brightness-110 hover:scale-105 transition-all uppercase tracking-wider" href="https://wa.me/573024555428" aria-label="Cotizar por WhatsApp" rel="noopener noreferrer" target="_blank">
           <span class="material-symbols-outlined text-[18px]">chat</span>
-          <span class="hidden md:inline">Cotizar</span> WhatsApp
+          <span class="hidden md:inline">Cotizar</span> <span class="hidden sm:inline">WhatsApp</span>
         </a>
 
-        <button id="mobile-menu-btn" aria-label="Abrir Menú" class="xl:hidden p-2 text-on-surface hover:text-primary rounded-lg bg-surface-container focus:outline-none">
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu" class="xl:hidden w-11 h-11 inline-flex items-center justify-center text-on-surface hover:text-primary rounded-lg bg-surface-container">
           <span class="material-symbols-outlined text-[26px]">menu</span>
         </button>
       </div>
     </div>
 
     <!-- Mobile Drawer -->
-    <div id="mobile-menu" class="hidden xl:hidden w-full bg-surface-container-high/95 backdrop-blur-2xl border-b border-outline-variant/20 px-gutter-lg py-space-md flex-col gap-space-xs animate-fade-in-up">
+    <div id="mobile-menu" class="hidden xl:hidden w-full bg-surface-container-high/95 backdrop-blur-2xl border-b border-outline-variant/20 px-4 sm:px-gutter-lg py-space-md flex-col gap-space-xs animate-fade-in-up">
       <a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg flex items-center justify-between transition-colors" href="index.html">
         <span>Inicio</span>
         <span class="material-symbols-outlined text-[18px]">chevron_right</span>
@@ -183,6 +184,16 @@
         <span>Software &amp; Periféricos</span>
         <span class="material-symbols-outlined text-[18px]">chevron_right</span>
       </a>
+      <div class="mt-space-sm pt-space-md border-t border-white/5 grid grid-cols-2 gap-space-sm">
+        <a class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md" href="tel:+573024555428">
+          <span class="material-symbols-outlined text-[18px] text-tertiary">call</span>
+          <span>Llamar</span>
+        </a>
+        <a class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold" href="https://wa.me/573024555428" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>WhatsApp</span>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -559,5 +570,6 @@
 
   <!-- External Separated Script -->
   <script src="js/main.js"></script>
+  <script src="js/mobile-nav.js"></script>
 </body>
 </html>
