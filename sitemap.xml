@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página Principal / Inicio -->
+  <url>
+    <loc>https://[DOMINIO]/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Servicios Técnicos & Upgrades -->
+  <url>
+    <loc>https://[DOMINIO]/servicios-tecnicos.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Computadoras a la Medida & Tarjetas Gráficas (GPU) -->
+  <url>
+    <loc>https://[DOMINIO]/computadoras-gpu.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Sistemas de Impresión & Soporte Remoto AnyDesk -->
+  <url>
+    <loc>https://[DOMINIO]/impresoras-soporte-remoto.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Software Certificado, Licencias & Periféricos -->
+  <url>
+    <loc>https://[DOMINIO]/software-perifericos.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

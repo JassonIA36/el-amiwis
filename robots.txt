@@ -3,7 +3,10 @@ Allow: /
 Allow: /assets/
 Allow: /favicon.ico
 
-# Permitir que Googlebot-Image rastree los favicons
+# Permitir que Googlebot-Image rastree las imágenes y favicons
 User-agent: Googlebot-Image
 Allow: /
 Allow: /assets/
+
+# Mapa del sitio XML (Reemplazar [DOMINIO] con la URL pública definitiva)
+Sitemap: https://[DOMINIO]/sitemap.xml
