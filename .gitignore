@@ -19,3 +19,6 @@ Thumbs.db
 *.tmp
 *.log
 .cache/
+
+.impeccable/review/
+.impeccable/live/

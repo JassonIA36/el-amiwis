@@ -1,0 +1,52 @@
+{
+ "title": "Computadores a la Medida y Venta de PC Bogotá | Pedro Roa",
+ "desc": "Diseño y ensamble de computadores a la medida y venta de PC y GPUs en Bogotá. Rendimiento extremo gamer y workstation. ¡Cotiza tu ensamble por WhatsApp!",
+ "og": "/assets/custom-pc-build.jpg",
+ "ld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "Service",
+   "name": "Computadores a la Medida y Venta de PC y GPUs en Bogotá",
+   "provider": {
+    "@type": "ComputerRepair",
+    "name": "Pedro Roa – Computer Technology",
+    "telephone": "+573024555428",
+    "url": "https://[DOMINIO]/",
+    "image": "https://[DOMINIO]/assets/custom-pc-build.jpg"
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Bogotá",
+    "addressCountry": "CO"
+   },
+   "description": "Ensamble personalizado de computadores a la medida y venta de PC y tarjetas gráficas en Bogotá. Calibración térmica, pruebas de esfuerzo y componentes de alto rendimiento.",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Ensamble y Venta de PC",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Computadores a la medida para gaming y renderizado 3D"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Venta e instalación de GPUs NVIDIA GeForce y AMD Radeon"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Asesoría y entrega a domicilio en Bogotá"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

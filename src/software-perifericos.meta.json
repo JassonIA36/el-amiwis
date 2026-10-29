@@ -1,0 +1,56 @@
+{
+ "title": "Formateo de PC, Licencias y Periféricos Bogotá | Pedro Roa",
+ "desc": "Formateo de computadores en Bogotá, instalación de programas, licencias originales Windows/Office y periféricos. ¡Escríbenos por WhatsApp y cotiza ya!",
+ "og": "/assets/custom-pc-hero.jpg",
+ "ld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "Service",
+   "serviceType": "Formateo de computadores, licenciamiento de software y venta de periféricos",
+   "provider": {
+    "@type": "ComputerRepair",
+    "name": "Pedro Roa – Computer Technology",
+    "telephone": "+57 302 4555428",
+    "url": "https://[DOMINIO]/",
+    "areaServed": {
+     "@type": "City",
+     "name": "Bogotá",
+     "addressCountry": "CO"
+    }
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Bogotá",
+    "addressCountry": "CO"
+   },
+   "description": "Formateo e instalación de sistemas operativos Windows 10/11 Pro, software de oficina, programas de diseño y venta de periféricos y componentes en Bogotá.",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Software y Periféricos Bogotá",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Formateo de computadores e instalación de programas en Bogotá"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Licenciamiento original Windows 11/10 Pro y Microsoft 365"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Venta e instalación de periféricos, SSDs NVMe y componentes"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

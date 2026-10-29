@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T00:00:00Z",
+  "title": "Design System: Pedro Roa – Computer Technology",
+  "extensions": {
+    "colorMeta": {
+      "signal-yellow": { "role": "primary", "displayName": "Amarillo Señal", "canonical": "#ffd21f", "tonalRamp": ["#3d3200", "#665200", "#8f7300", "#b89500", "#e0b800", "#ffd21f", "#ffe066", "#fff3b8"] },
+      "line-azul": { "role": "secondary", "displayName": "Línea Azul", "canonical": "#1565d8", "tonalRamp": ["#06214a", "#0b3a82", "#1050b0", "#1565d8", "#4c8ae6", "#82aef0", "#b8d1f7", "#e3edfc"] },
+      "line-naranja": { "role": "secondary", "displayName": "Línea Naranja", "canonical": "#b34f00", "tonalRamp": ["#3a1a00", "#5f2c00", "#833b00", "#b34f00", "#d9751f", "#eba062", "#f5cba5", "#fbeadb"] },
+      "line-verde": { "role": "secondary", "displayName": "Línea Verde", "canonical": "#0e7a43", "tonalRamp": ["#03251a", "#074a2a", "#0a6236", "#0e7a43", "#3a9d68", "#72bf95", "#aedcc3", "#dff2e8"] },
+      "line-rojo": { "role": "secondary", "displayName": "Línea Roja", "canonical": "#c62833", "tonalRamp": ["#3d070c", "#68101a", "#921b26", "#c62833", "#dc5c65", "#ea9096", "#f4c4c8", "#fbe8ea"] },
+      "ground": { "role": "neutral", "displayName": "Banco de Taller", "canonical": "#f3f4f1", "tonalRamp": ["#1d1e1c", "#3a3c38", "#5c5f59", "#8a8d86", "#b4b7b0", "#d3d7d1", "#e7e9e4", "#f3f4f1"] },
+      "ink": { "role": "neutral", "displayName": "Tinta", "canonical": "#12161b", "tonalRamp": ["#12161b", "#232a32", "#333c46", "#444c55", "#6a727b", "#939aa1", "#c0c5ca", "#e6e8ea"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "h1 de portada y de servicio, mayúsculas, Barlow Condensed 800." },
+      "headline": { "displayName": "Headline", "purpose": "h2 de sección en mayúsculas." },
+      "title": { "displayName": "Title", "purpose": "Paradas, estaciones, pasos y preguntas." },
+      "body": { "displayName": "Body", "purpose": "Texto corrido en Atkinson Hyperlegible, máx. 68ch." },
+      "label": { "displayName": "Label", "purpose": "Botones, nombres de línea y navegación." }
+    },
+    "shadows": [
+      { "name": "focus-ring", "value": "outline: 3px solid #12161b; outline-offset: 3px; box-shadow: 0 0 0 6px #ffd21f", "purpose": "Foco visible por teclado." },
+      { "name": "stop-selected", "value": "0 0 0 4px #ffffff, 0 0 0 7px var(--k)", "purpose": "Anillos de la parada elegida." },
+      { "name": "ghost-outline", "value": "inset 0 0 0 2px #12161b", "purpose": "Contorno del botón fantasma." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Easing único para pulsación, hover y estados de parada." },
+      { "name": "press", "value": "140ms", "purpose": "Botón: escala 0.97 y color." },
+      { "name": "state", "value": "120–220ms", "purpose": "Parada, flecha de banda, menú y signo del FAQ." }
+    ],
+    "breakpoints": [
+      { "name": "gutter-md", "value": "720px" },
+      { "name": "structure", "value": "900px" },
+      { "name": "gutter-lg", "value": "1100px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón WhatsApp",
+      "kind": "button",
+      "refersTo": "button-wa",
+      "description": "Acción principal, amarillo señal.",
+      "html": "<a class=\"ds-btn-wa\" href=\"#\">Escribir por WhatsApp</a>",
+      "css": ".ds-btn-wa{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#ffd21f;color:#12161b;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:.01em;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),background-color 140ms cubic-bezier(.23,1,.32,1)}.ds-btn-wa:hover{background:#ffe066}.ds-btn-wa:active{transform:scale(.97)}.ds-btn-wa:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #ffd21f}"
+    },
+    {
+      "name": "Botón tinta",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Acción secundaria oscura (Llamar).",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\">Llamar</a>",
+      "css": ".ds-btn-ink{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#12161b;color:#fff;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),background-color 140ms}.ds-btn-ink:hover{background:#2a323b}.ds-btn-ink:active{transform:scale(.97)}.ds-btn-ink:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #ffd21f}"
+    },
+    {
+      "name": "Botón fantasma",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Acción terciaria con contorno de tinta.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Ver servicios</a>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:transparent;color:#12161b;box-shadow:inset 0 0 0 2px #12161b;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;text-decoration:none;transition:background-color 140ms,color 140ms}.ds-btn-ghost:hover{background:#12161b;color:#fff}.ds-btn-ghost:focus-visible{outline:3px solid #12161b;outline-offset:3px}"
+    },
+    {
+      "name": "Chip de línea",
+      "kind": "chip",
+      "refersTo": "line-chip",
+      "description": "Nombre de línea en su color.",
+      "html": "<a class=\"ds-line-chip\" href=\"#\">Mantenimiento</a>",
+      "css": ".ds-line-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;background:#1565d8;color:#fff;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;text-decoration:none}.ds-line-chip:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #ffd21f}"
+    },
+    {
+      "name": "Parada",
+      "kind": "custom",
+      "refersTo": "line-azul",
+      "description": "Síntoma seleccionable sobre el riel; hueco = disponible, lleno = elegida.",
+      "html": "<div class=\"ds-rail\"><button class=\"ds-stop\" aria-pressed=\"true\"><span class=\"ds-dot\"></span><span class=\"ds-txt\">No enciende</span></button></div>",
+      "css": ".ds-rail{position:relative;--k:#1565d8}.ds-rail::before{content:'';position:absolute;left:11px;top:14px;bottom:14px;width:10px;background:var(--k);border-radius:5px}.ds-stop{position:relative;display:flex;align-items:center;gap:16px;min-height:52px;background:none;border:0;cursor:pointer;color:#12161b;text-align:left}.ds-dot{width:32px;height:32px;display:grid;place-items:center}.ds-dot::before{content:'';width:22px;height:22px;border-radius:50%;background:#fff;border:5px solid #12161b;transition:background-color 120ms cubic-bezier(.23,1,.32,1),transform 160ms cubic-bezier(.23,1,.32,1)}.ds-stop[aria-pressed='true'] .ds-dot::before{background:#12161b;transform:scale(1.12);box-shadow:0 0 0 4px #fff,0 0 0 7px var(--k)}.ds-txt{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:1.32rem}.ds-stop[aria-pressed='true'] .ds-txt{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px;text-decoration-color:var(--k)}.ds-stop:hover .ds-dot::before{transform:scale(1.12)}.ds-stop:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #ffd21f;border-radius:6px}"
+    },
+    {
+      "name": "Estación terminal",
+      "kind": "card",
+      "refersTo": "terminal",
+      "description": "Bloque amarillo donde convergen las líneas; envía el viaje por WhatsApp.",
+      "html": "<div class=\"ds-terminal\"><h3>Pedro Roa</h3><label for=\"n\">Tu nombre</label><input id=\"n\" placeholder=\"Nombre\"><a class=\"ds-send\" href=\"#\">Enviar a Pedro</a></div>",
+      "css": ".ds-terminal{background:#ffd21f;color:#12161b;border:2px solid #12161b;border-radius:18px;padding:22px 18px 20px}.ds-terminal h3{margin:0 0 10px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:2.1rem;line-height:1;text-transform:uppercase}.ds-terminal label{display:block;font-weight:700;font-size:.95rem;margin-bottom:6px}.ds-terminal input{width:100%;min-height:48px;padding:0 14px;border:2px solid #12161b;border-radius:10px;background:#fff;font:inherit;color:#12161b}.ds-terminal input:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #fff}.ds-send{display:flex;align-items:center;justify-content:center;min-height:52px;margin-top:12px;background:#12161b;color:#fff;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;text-decoration:none}.ds-send:active{transform:scale(.97)}"
+    },
+    {
+      "name": "Banda de índice",
+      "kind": "nav",
+      "refersTo": "line-naranja",
+      "description": "Banda de ancho completo en color de línea que enlaza a cada servicio.",
+      "html": "<a class=\"ds-banda\" href=\"#\"><h3>A la medida</h3><p>Armado y mejoras de PC.</p><span class=\"ds-ir\">Ver ruta</span></a>",
+      "css": ".ds-banda{display:grid;gap:14px;padding:22px 16px;background:#b34f00;color:#fff;text-decoration:none;border-top:2px solid #12161b;border-bottom:2px solid #12161b;transition:background-color 160ms cubic-bezier(.23,1,.32,1)}.ds-banda h3{margin:0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:2.4rem;line-height:1;text-transform:uppercase}.ds-banda p{margin:0;font-size:1.05rem}.ds-ir{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase}.ds-banda:focus-visible{outline:3px solid #12161b;outline-offset:-6px;box-shadow:inset 0 0 0 6px #ffd21f}"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Diagrama de Rutas",
+    "overview": "El sitio se lee como el plano de un sistema de transporte público: cada síntoma es una parada, cada servicio es una línea de color, y las cuatro líneas llegan a una sola estación terminal, Pedro. La superficie es un gris banco de taller (#f3f4f1) con tinta casi negra; el color vive solo en las líneas y en el amarillo señal. Es directo, de señalética, pensado para leerse a plena luz desde el celular.\n\nLa densidad es baja y la jerarquía es de rótulo: títulos condensados en mayúsculas, texto largo en una sans de máxima legibilidad. Las formas son planas, con contornos de tinta de 2 px y rieles gruesos de 10 px; la profundidad se resuelve con color y borde, no con sombra.",
+    "keyCharacteristics": [
+      "Cuatro líneas de color (azul, naranja, verde, rojo) con un solo color activo por página mediante --c / --k.",
+      "Amarillo señal reservado para la estación terminal, el botón principal de WhatsApp, el cierre y la selección de texto.",
+      "Rieles de 10 px con paradas circulares con aro: hueco = disponible, lleno = elegida.",
+      "Bordes de tinta de 2 px como estructura; sin sombras de elevación.",
+      "Móvil primero: barra fija inferior con WhatsApp y Llamar, objetivos táctiles de 44 px o más."
+    ],
+    "rules": [
+      { "name": "The Un-Solo-Amarillo Rule", "body": "El amarillo señala la acción y la estación final; no se usa como resaltador de titulares ni como relleno decorativo.", "section": "colors" },
+      { "name": "The Línea-Por-Página Rule", "body": "Una página de servicio usa una sola línea de color (data-line); el resto del chrome es tinta y neutros.", "section": "colors" },
+      { "name": "The Rótulo Rule", "body": "Display y títulos van en Barlow Condensed en mayúsculas; el texto corrido nunca va en condensada.", "section": "typography" },
+      { "name": "The Borde-No-Sombra Rule", "body": "Separa superficies con borde de 2 px o cambio de color; el anillo de foco (3 px tinta + 6 px amarillo) es el único realce con halo.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar una sola línea de color por página de servicio y amarillo solo en acción y estación final.",
+      "Do mantener objetivos táctiles de 44 px o más y la acción de WhatsApp a un toque (barra fija en celular).",
+      "Do estructurar con bordes de tinta de 2 px, rieles de 10 px y paradas con aro.",
+      "Do poner las fotos en monocromo sobre el color de su línea.",
+      "Do usar el easing cubic-bezier(0.23, 1, 0.32, 1) con duraciones de 120–220 ms."
+    ],
+    "donts": [
+      "Don't volver a la plantilla oscura «terminal/cyber» con tarjetas iguales de icono.",
+      "Don't usar resaltador amarillo en titulares.",
+      "Don't poner cifras, métricas o reseñas inventadas en la interfaz.",
+      "Don't usar sombras de elevación; usa borde o color.",
+      "Don't componer texto corrido en Barlow Condensed."
+    ]
+  }
+}

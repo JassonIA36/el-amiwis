@@ -8,5 +8,4 @@ User-agent: Googlebot-Image
 Allow: /
 Allow: /assets/
 
-# Mapa del sitio XML (Reemplazar [DOMINIO] con la URL pública definitiva)
-Sitemap: https://[DOMINIO]/sitemap.xml
+Sitemap: https://el-amiwis.vercel.app/sitemap.xml
