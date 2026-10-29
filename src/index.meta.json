@@ -1,0 +1,169 @@
+{
+ "title": "Servicio Técnico de Computadores en Bogotá | Pedro Roa",
+ "desc": "Servicio técnico de computadores y portátiles en Bogotá. Mantenimiento, reparación, upgrades y soporte a domicilio. ¡Escríbenos por WhatsApp para cotizar!",
+ "og": "/assets/custom-pc-hero.jpg",
+ "ld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "ComputerRepair",
+   "@id": "https://[DOMINIO]/#localbusiness",
+   "name": "Pedro Roa – Computer Technology",
+   "alternateName": "Pedro Roa Servicio Técnico de Computadores",
+   "url": "https://[DOMINIO]/",
+   "telephone": "+573024555428",
+   "email": "pedroroae@gmail.com",
+   "logo": "https://[DOMINIO]/assets/logo.png",
+   "image": "https://[DOMINIO]/assets/custom-pc-hero.jpg",
+   "description": "Servicio técnico especializado de computadores y portátiles en Bogotá. Mantenimiento preventivo y correctivo, reparación de impresoras, upgrades SSD/RAM, computadores a la medida y soporte técnico remoto.",
+   "priceRange": "$$",
+   "currenciesAccepted": "COP",
+   "paymentAccepted": "Efectivo, Transferencia Bancaria, Nequi, Daviplata",
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Bogotá",
+     "addressCountry": "CO"
+    }
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "08:00",
+     "closes": "18:00"
+    }
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de Tecnología Pedro Roa",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Reparación y mantenimiento de computadores y portátiles",
+       "description": "Limpieza física profunda, cambio de pasta térmica de alto rendimiento, reparación electrónica y diagnóstico avanzado en Bogotá."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Reparación y mantenimiento de impresoras",
+       "description": "Servicio técnico de impresoras EcoTank de inyección continua y láser, purga de tintas y solución de atascamientos."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Upgrades (SSD, memoria RAM)",
+       "description": "Repotenciación de portátiles y PC con unidades SSD NVMe M.2 y expansión de memoria RAM DDR4/DDR5."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Computadores a la medida y venta de PC",
+       "description": "Ensamble profesional de PC Gamer y Workstations para renderizado, arquitectura e inteligencia artificial."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Formateo e instalación de programas",
+       "description": "Formateo limpio con respaldo seguro, instalación de Windows oficial, suites de oficina y controladores certificados."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Soporte técnico remoto",
+       "description": "Asistencia técnica remota cifrada por AnyDesk para solución de incidentes de software y configuración."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Venta de periféricos y GPUs",
+       "description": "Venta e instalación de tarjetas gráficas dedicadas NVIDIA/AMD y periféricos ergonómicos."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Servicio a domicilio en Bogotá",
+       "description": "Atención técnica especializada en el domicilio o empresa del cliente en Bogotá."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Cuánto cuesta el mantenimiento de un computador en Bogotá?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "El costo del mantenimiento preventivo básico inicia desde [CONFIRMAR: $ PRECIO DESDE], mientras que un mantenimiento correctivo o especializado con cambio de pasta térmica de alta conductividad e informe térmico se cotiza según el tipo de equipo (portátil o PC de escritorio). Escríbenos por WhatsApp con el modelo de tu equipo para brindarte un presupuesto exacto y sin compromiso."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Prestan servicio técnico de computadores a domicilio en Bogotá?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, ofrecemos servicio técnico y diagnóstico a domicilio en Bogotá cubriendo sectores como [LOCALIDADES QUE ATIENDE]. Si el procedimiento requiere microelectrónica o pruebas de estrés prolongadas, podemos trasladar el equipo a nuestro laboratorio de forma segura y retornarlo calibrado."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cuánto tiempo demora la reparación o mantenimiento de un computador?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Un mantenimiento preventivo o upgrade de memoria RAM y disco SSD suele completarse en [CONFIRMAR: 2 a 4 horas / el mismo día]. Reparaciones electrónicas complejas, diagnóstico de tarjetas madre o ensamble de computadores a la medida requieren entre [CONFIRMAR: 24 y 48 horas] con pruebas de estabilidad antes de la entrega."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Los servicios y repuestos tienen garantía?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, todos nuestros trabajos de reparación, mantenimiento y repuestos cuentan con garantía por escrito de [CONFIRMAR: 1 a 3 meses en mano de obra / garantía de fabricante en partes nuevas]. Entregamos informe técnico y soporte post-servicio para tu completa tranquilidad."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué tipos de computadores y marcas atienden?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Atendemos todas las marcas líderes de computadores y portátiles (Asus, Lenovo, Dell, HP, Acer, Apple Mac, MSI, entre otras), así como torres y computadores de escritorio ensamblados para gaming, arquitectura y oficinas."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo es el proceso de soporte técnico remoto por AnyDesk?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Es una conexión rápida y 100% segura para resolver fallas de software, virus, configuración de impresoras o licencias sin salir de casa. Descargas AnyDesk, nos autorizas el acceso temporal y supervisas en tu pantalla cada paso que realizamos en tiempo real."
+     }
+    }
+   ]
+  }
+ ]
+}

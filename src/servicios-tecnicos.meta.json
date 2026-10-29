@@ -1,0 +1,59 @@
+{
+ "title": "Mantenimiento y Reparación de PC en Bogotá | Pedro Roa",
+ "desc": "Reparación de portátiles y PC de escritorio en Bogotá. Mantenimiento preventivo, cambio de pasta térmica y upgrades SSD/RAM. ¡Escríbenos hoy por WhatsApp!",
+ "og": "/assets/gpu-hero.jpg",
+ "ld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "Service",
+   "name": "Mantenimiento y Reparación de Computadores y Portátiles",
+   "provider": {
+    "@type": "ComputerRepair",
+    "name": "Pedro Roa – Computer Technology",
+    "telephone": "+573024555428",
+    "url": "https://[DOMINIO]/",
+    "image": "https://[DOMINIO]/assets/gpu-hero.jpg"
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Bogotá",
+    "addressCountry": "CO"
+   },
+   "description": "Servicio técnico especializado en PC de escritorio y portátiles en Bogotá. Mantenimiento físico preventivo, correctivo, cambio de pasta térmica y upgrades SSD y memoria RAM.",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Mantenimiento y Upgrades",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Mantenimiento físico preventivo y limpieza profunda"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Diagnóstico electrónico y reparación de placas base"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Upgrade de SSD NVMe M.2 y ampliación de memoria RAM"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Técnico de computadores a domicilio en Bogotá"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

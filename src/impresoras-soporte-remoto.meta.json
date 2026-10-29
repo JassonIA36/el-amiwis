@@ -1,0 +1,59 @@
+{
+ "title": "Reparación de Impresoras y Soporte Bogotá | Pedro Roa",
+ "desc": "Reparación de impresoras en Bogotá y soporte técnico remoto por AnyDesk. Mantenimiento EcoTank, tintas y software. ¡Escríbenos ahora mismo por WhatsApp!",
+ "og": "/assets/ecotank-product.jpg",
+ "ld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "Service",
+   "name": "Reparación de Impresoras y Soporte Técnico Remoto",
+   "provider": {
+    "@type": "ComputerRepair",
+    "name": "Pedro Roa – Computer Technology",
+    "telephone": "+573024555428",
+    "url": "https://[DOMINIO]/",
+    "image": "https://[DOMINIO]/assets/ecotank-product.jpg"
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Bogotá",
+    "addressCountry": "CO"
+   },
+   "description": "Mantenimiento preventivo y correctivo de impresoras EcoTank de inyección continua y láser en Bogotá. Soporte técnico remoto AnyDesk para configuración de software y contingencias.",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicio de Impresoras y Soporte Remoto",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Reparación y purgado de impresoras EcoTank"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Mantenimiento y cambio de tóner/fusor para impresoras láser"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Soporte técnico remoto inmediato con AnyDesk"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Servicio a domicilio en Bogotá para empresas y hogares"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}
