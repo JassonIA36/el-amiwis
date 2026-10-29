@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Dirección pública del sitio. Cámbiala aquí cuando Pedro tenga su dominio definitivo y vuelve a ejecutar el script.
-const SITE = 'https://el-amiwis.vercel.app';
+const SITE = 'https://pedroroatech.vercel.app';
 const WA = '573024555428';
 const TEL = '+57 302 4555428';
 const MAIL = 'pedroroae@gmail.com';
@@ -227,7 +227,8 @@ function head({ title, desc, file, ogImage, ld, line }) {
 <link rel="canonical" href="${url}">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="ma6vcR9GbZT9sEGYslggxtk1oNrjwc28c1keLYDhthA">
-<meta name="theme-color" content="#f3f4f1">
+<meta name="theme-color" content="#0e1217">
+<meta name="color-scheme" content="dark">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CO">
 <meta property="og:site_name" content="Pedro Roa – Computer Technology">
@@ -519,8 +520,8 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
 const robots = fs.readFileSync(path.join(ROOT, 'robots.txt'), 'utf8').replace(/# Mapa del sitio[^\n]*\nSitemap:[^\n]*/, `Sitemap: ${SITE}/sitemap.xml`);
 fs.writeFileSync(path.join(ROOT, 'robots.txt'), robots);
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'site.webmanifest'), 'utf8'));
-manifest.theme_color = '#f3f4f1';
-manifest.background_color = '#f3f4f1';
+manifest.theme_color = '#0e1217';
+manifest.background_color = '#0e1217';
 manifest.lang = 'es-CO';
 fs.writeFileSync(path.join(ROOT, 'site.webmanifest'), JSON.stringify(manifest, null, 2) + '\n');
 console.log('Listo:', pages.join(', '));
