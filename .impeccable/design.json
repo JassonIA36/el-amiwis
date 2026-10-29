@@ -1,16 +1,18 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-29T00:00:00Z",
+  "generatedAt": "2026-10-29T12:00:00Z",
   "title": "Design System: Pedro Roa – Computer Technology",
   "extensions": {
     "colorMeta": {
-      "signal-yellow": { "role": "primary", "displayName": "Amarillo Señal", "canonical": "#ffd21f", "tonalRamp": ["#3d3200", "#665200", "#8f7300", "#b89500", "#e0b800", "#ffd21f", "#ffe066", "#fff3b8"] },
-      "line-azul": { "role": "secondary", "displayName": "Línea Azul", "canonical": "#1565d8", "tonalRamp": ["#06214a", "#0b3a82", "#1050b0", "#1565d8", "#4c8ae6", "#82aef0", "#b8d1f7", "#e3edfc"] },
-      "line-naranja": { "role": "secondary", "displayName": "Línea Naranja", "canonical": "#b34f00", "tonalRamp": ["#3a1a00", "#5f2c00", "#833b00", "#b34f00", "#d9751f", "#eba062", "#f5cba5", "#fbeadb"] },
-      "line-verde": { "role": "secondary", "displayName": "Línea Verde", "canonical": "#0e7a43", "tonalRamp": ["#03251a", "#074a2a", "#0a6236", "#0e7a43", "#3a9d68", "#72bf95", "#aedcc3", "#dff2e8"] },
-      "line-rojo": { "role": "secondary", "displayName": "Línea Roja", "canonical": "#c62833", "tonalRamp": ["#3d070c", "#68101a", "#921b26", "#c62833", "#dc5c65", "#ea9096", "#f4c4c8", "#fbe8ea"] },
-      "ground": { "role": "neutral", "displayName": "Banco de Taller", "canonical": "#f3f4f1", "tonalRamp": ["#1d1e1c", "#3a3c38", "#5c5f59", "#8a8d86", "#b4b7b0", "#d3d7d1", "#e7e9e4", "#f3f4f1"] },
-      "ink": { "role": "neutral", "displayName": "Tinta", "canonical": "#12161b", "tonalRamp": ["#12161b", "#232a32", "#333c46", "#444c55", "#6a727b", "#939aa1", "#c0c5ca", "#e6e8ea"] }
+      "ice": { "role": "primary", "displayName": "Hielo", "canonical": "#e4ecf6", "tonalRamp": ["#1b222b", "#3a4552", "#5b6877", "#7f8d9e", "#a5b3c4", "#c4d1e0", "#e4ecf6", "#f4f8fc"] },
+      "ice-ink": { "role": "primary", "displayName": "Tinta de Hielo", "canonical": "#0b0f14", "tonalRamp": ["#0b0f14", "#141a22", "#1e2630", "#2b3541", "#3a4554", "#5d6672", "#8a929c", "#c0c5ca"] },
+      "line-azul": { "role": "secondary", "displayName": "Línea Azul", "canonical": "#4f8cff", "tonalRamp": ["#0b2250", "#133a86", "#1d54c0", "#3a74ee", "#4f8cff", "#85adff", "#b6ceff", "#e2ecff"] },
+      "line-naranja": { "role": "secondary", "displayName": "Línea Ámbar", "canonical": "#e5a23c", "tonalRamp": ["#3d2703", "#6b4508", "#996410", "#c4821f", "#e5a23c", "#eebb6f", "#f5d4a3", "#fbefdb"] },
+      "line-verde": { "role": "secondary", "displayName": "Línea Verde Agua", "canonical": "#33c3a3", "tonalRamp": ["#04302a", "#085247", "#0e7565", "#1a9a84", "#33c3a3", "#6ad6bc", "#a1e6d5", "#d9f5ee"] },
+      "line-rojo": { "role": "secondary", "displayName": "Línea Coral", "canonical": "#f26b76", "tonalRamp": ["#450c12", "#7a1a24", "#aa2b38", "#d54a56", "#f26b76", "#f6959d", "#fabfc4", "#fde9eb"] },
+      "ground": { "role": "neutral", "displayName": "Grafito", "canonical": "#0e1217", "tonalRamp": ["#0e1217", "#171c23", "#202732", "#2b333e", "#4a5461", "#6f7a88", "#a8b2bf", "#e8edf3"] },
+      "paper": { "role": "neutral", "displayName": "Papel Grafito", "canonical": "#171c23", "tonalRamp": ["#0e1217", "#171c23", "#202732", "#2b333e", "#3a4552", "#4a5461", "#6f7a88", "#a8b2bf"] },
+      "ink": { "role": "neutral", "displayName": "Texto", "canonical": "#e8edf3", "tonalRamp": ["#4a5461", "#6f7a88", "#8d98a6", "#a8b2bf", "#c2cad4", "#d6dce4", "#e8edf3", "#f5f7fa"] }
     },
     "typographyMeta": {
       "display": { "displayName": "Display", "purpose": "h1 de portada y de servicio, mayúsculas, Barlow Condensed 800." },
@@ -20,14 +22,17 @@
       "label": { "displayName": "Label", "purpose": "Botones, nombres de línea y navegación." }
     },
     "shadows": [
-      { "name": "focus-ring", "value": "outline: 3px solid #12161b; outline-offset: 3px; box-shadow: 0 0 0 6px #ffd21f", "purpose": "Foco visible por teclado." },
-      { "name": "stop-selected", "value": "0 0 0 4px #ffffff, 0 0 0 7px var(--k)", "purpose": "Anillos de la parada elegida." },
-      { "name": "ghost-outline", "value": "inset 0 0 0 2px #12161b", "purpose": "Contorno del botón fantasma." }
+      { "name": "focus-ring", "value": "outline: 3px solid #e4ecf6; outline-offset: 3px", "purpose": "Foco visible por teclado; único realce de interacción." },
+      { "name": "band-rail", "value": "inset 0 10px 0 var(--k)", "purpose": "Riel de color superior de las bandas de índice (12px en cabeceras de página)." },
+      { "name": "stop-selected", "value": "0 0 0 4px #171c23, 0 0 0 7px var(--k)", "purpose": "Anillos de la parada elegida." },
+      { "name": "ghost-outline", "value": "inset 0 0 0 2px #e8edf3", "purpose": "Contorno del botón fantasma." }
     ],
     "motion": [
-      { "name": "ease", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Easing único para pulsación, hover y estados de parada." },
+      { "name": "ease", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Easing único para pulsación, hover, cajón y estados de parada." },
       { "name": "press", "value": "140ms", "purpose": "Botón: escala 0.97 y color." },
-      { "name": "state", "value": "120–220ms", "purpose": "Parada, flecha de banda, menú y signo del FAQ." }
+      { "name": "drawer", "value": "200ms", "purpose": "Cajón de navegación: opacidad y desplazamiento de 8 px; visibilidad con retardo de 200 ms al cerrar. También menú y flecha de banda." },
+      { "name": "state", "value": "120–220ms", "purpose": "Parada, banda, signo del FAQ." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Con prefers-reduced-motion: reduce, transiciones y animaciones bajan a 0.01ms y el scroll suave se desactiva." }
     ],
     "breakpoints": [
       { "name": "gutter-md", "value": "720px" },
@@ -40,33 +45,33 @@
       "name": "Botón WhatsApp",
       "kind": "button",
       "refersTo": "button-wa",
-      "description": "Acción principal, amarillo señal.",
+      "description": "Acción principal, hielo con Tinta de Hielo.",
       "html": "<a class=\"ds-btn-wa\" href=\"#\">Escribir por WhatsApp</a>",
-      "css": ".ds-btn-wa{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#ffd21f;color:#12161b;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:.01em;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),background-color 140ms cubic-bezier(.23,1,.32,1)}.ds-btn-wa:hover{background:#ffe066}.ds-btn-wa:active{transform:scale(.97)}.ds-btn-wa:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #ffd21f}"
+      "css": ".ds-btn-wa{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#e4ecf6;color:#0b0f14;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:.01em;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),background-color 140ms cubic-bezier(.23,1,.32,1)}.ds-btn-wa:active{transform:scale(.97)}.ds-btn-wa:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px}"
     },
     {
-      "name": "Botón tinta",
+      "name": "Botón oscuro",
       "kind": "button",
       "refersTo": "button-ink",
       "description": "Acción secundaria oscura (Llamar).",
       "html": "<a class=\"ds-btn-ink\" href=\"#\">Llamar</a>",
-      "css": ".ds-btn-ink{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#12161b;color:#fff;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),background-color 140ms}.ds-btn-ink:hover{background:#2a323b}.ds-btn-ink:active{transform:scale(.97)}.ds-btn-ink:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #ffd21f}"
+      "css": ".ds-btn-ink{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#0b0f14;color:#e8edf3;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),background-color 140ms cubic-bezier(.23,1,.32,1)}.ds-btn-ink:hover{background:#1c2430}.ds-btn-ink:active{transform:scale(.97)}.ds-btn-ink:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px}"
     },
     {
       "name": "Botón fantasma",
       "kind": "button",
       "refersTo": "button-ghost",
-      "description": "Acción terciaria con contorno de tinta.",
+      "description": "Acción terciaria con contorno de texto.",
       "html": "<a class=\"ds-btn-ghost\" href=\"#\">Ver servicios</a>",
-      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:transparent;color:#12161b;box-shadow:inset 0 0 0 2px #12161b;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;text-decoration:none;transition:background-color 140ms,color 140ms}.ds-btn-ghost:hover{background:#12161b;color:#fff}.ds-btn-ghost:focus-visible{outline:3px solid #12161b;outline-offset:3px}"
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:transparent;color:#e8edf3;box-shadow:inset 0 0 0 2px #e8edf3;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;text-decoration:none;transition:background-color 140ms cubic-bezier(.23,1,.32,1),color 140ms cubic-bezier(.23,1,.32,1)}.ds-btn-ghost:hover{background:#e8edf3;color:#0b0f14}.ds-btn-ghost:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px}"
     },
     {
       "name": "Chip de línea",
       "kind": "chip",
       "refersTo": "line-chip",
-      "description": "Nombre de línea en su color.",
+      "description": "Nombre de línea en su color, con texto Tinta de Hielo.",
       "html": "<a class=\"ds-line-chip\" href=\"#\">Mantenimiento</a>",
-      "css": ".ds-line-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;background:#1565d8;color:#fff;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;text-decoration:none}.ds-line-chip:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #ffd21f}"
+      "css": ".ds-line-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;background:#4f8cff;color:#0b0f14;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;text-decoration:none}.ds-line-chip:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px}"
     },
     {
       "name": "Parada",
@@ -74,53 +79,72 @@
       "refersTo": "line-azul",
       "description": "Síntoma seleccionable sobre el riel; hueco = disponible, lleno = elegida.",
       "html": "<div class=\"ds-rail\"><button class=\"ds-stop\" aria-pressed=\"true\"><span class=\"ds-dot\"></span><span class=\"ds-txt\">No enciende</span></button></div>",
-      "css": ".ds-rail{position:relative;--k:#1565d8}.ds-rail::before{content:'';position:absolute;left:11px;top:14px;bottom:14px;width:10px;background:var(--k);border-radius:5px}.ds-stop{position:relative;display:flex;align-items:center;gap:16px;min-height:52px;background:none;border:0;cursor:pointer;color:#12161b;text-align:left}.ds-dot{width:32px;height:32px;display:grid;place-items:center}.ds-dot::before{content:'';width:22px;height:22px;border-radius:50%;background:#fff;border:5px solid #12161b;transition:background-color 120ms cubic-bezier(.23,1,.32,1),transform 160ms cubic-bezier(.23,1,.32,1)}.ds-stop[aria-pressed='true'] .ds-dot::before{background:#12161b;transform:scale(1.12);box-shadow:0 0 0 4px #fff,0 0 0 7px var(--k)}.ds-txt{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:1.32rem}.ds-stop[aria-pressed='true'] .ds-txt{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px;text-decoration-color:var(--k)}.ds-stop:hover .ds-dot::before{transform:scale(1.12)}.ds-stop:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #ffd21f;border-radius:6px}"
+      "css": ".ds-rail{position:relative;--k:#4f8cff;color:#e8edf3}.ds-rail::before{content:'';position:absolute;left:11px;top:14px;bottom:14px;width:10px;background:var(--k);border-radius:5px}.ds-stop{position:relative;display:flex;align-items:center;gap:16px;min-height:52px;background:none;border:0;cursor:pointer;color:#e8edf3;text-align:left}.ds-dot{width:32px;height:32px;display:grid;place-items:center}.ds-dot::before{content:'';width:22px;height:22px;border-radius:50%;background:#171c23;border:5px solid #e8edf3;transition:background-color 120ms cubic-bezier(.23,1,.32,1),transform 160ms cubic-bezier(.23,1,.32,1)}.ds-stop[aria-pressed='true'] .ds-dot::before{background:#e8edf3;transform:scale(1.12);box-shadow:0 0 0 4px #171c23,0 0 0 7px var(--k)}.ds-txt{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:1.32rem}.ds-stop[aria-pressed='true'] .ds-txt{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px;text-decoration-color:var(--k)}.ds-stop:hover .ds-dot::before{transform:scale(1.12)}.ds-stop:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px;border-radius:6px}"
     },
     {
       "name": "Estación terminal",
       "kind": "card",
       "refersTo": "terminal",
-      "description": "Bloque amarillo donde convergen las líneas; envía el viaje por WhatsApp.",
+      "description": "Bloque hielo donde convergen las líneas; envía el viaje por WhatsApp.",
       "html": "<div class=\"ds-terminal\"><h3>Pedro Roa</h3><label for=\"n\">Tu nombre</label><input id=\"n\" placeholder=\"Nombre\"><a class=\"ds-send\" href=\"#\">Enviar a Pedro</a></div>",
-      "css": ".ds-terminal{background:#ffd21f;color:#12161b;border:2px solid #12161b;border-radius:18px;padding:22px 18px 20px}.ds-terminal h3{margin:0 0 10px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:2.1rem;line-height:1;text-transform:uppercase}.ds-terminal label{display:block;font-weight:700;font-size:.95rem;margin-bottom:6px}.ds-terminal input{width:100%;min-height:48px;padding:0 14px;border:2px solid #12161b;border-radius:10px;background:#fff;font:inherit;color:#12161b}.ds-terminal input:focus-visible{outline:3px solid #12161b;outline-offset:3px;box-shadow:0 0 0 6px #fff}.ds-send{display:flex;align-items:center;justify-content:center;min-height:52px;margin-top:12px;background:#12161b;color:#fff;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;text-decoration:none}.ds-send:active{transform:scale(.97)}"
+      "css": ".ds-terminal{background:#e4ecf6;color:#0b0f14;border-radius:18px;padding:22px 18px 20px}.ds-terminal h3{margin:0 0 10px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:2.1rem;line-height:1;text-transform:uppercase}.ds-terminal label{display:block;font-weight:700;font-size:.95rem;margin-bottom:6px}.ds-terminal input{width:100%;min-height:48px;padding:0 14px;border:2px solid #0b0f14;border-radius:10px;background:#fff;font:inherit;color:#0b0f14}.ds-terminal input::placeholder{color:#5d6672}.ds-terminal input:focus-visible{outline:3px solid #0b0f14;outline-offset:3px}.ds-send{display:flex;align-items:center;justify-content:center;min-height:52px;margin-top:12px;background:#0b0f14;color:#e8edf3;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1)}.ds-send:active{transform:scale(.97)}"
     },
     {
       "name": "Banda de índice",
       "kind": "nav",
-      "refersTo": "line-naranja",
-      "description": "Banda de ancho completo en color de línea que enlaza a cada servicio.",
+      "refersTo": "banda",
+      "description": "Banda oscura de ancho completo con riel de color arriba que enlaza a cada servicio.",
       "html": "<a class=\"ds-banda\" href=\"#\"><h3>A la medida</h3><p>Armado y mejoras de PC.</p><span class=\"ds-ir\">Ver ruta</span></a>",
-      "css": ".ds-banda{display:grid;gap:14px;padding:22px 16px;background:#b34f00;color:#fff;text-decoration:none;border-top:2px solid #12161b;border-bottom:2px solid #12161b;transition:background-color 160ms cubic-bezier(.23,1,.32,1)}.ds-banda h3{margin:0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:2.4rem;line-height:1;text-transform:uppercase}.ds-banda p{margin:0;font-size:1.05rem}.ds-ir{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase}.ds-banda:focus-visible{outline:3px solid #12161b;outline-offset:-6px;box-shadow:inset 0 0 0 6px #ffd21f}"
+      "css": ".ds-banda{--k:#e5a23c;display:grid;gap:14px;padding:34px 16px 22px;background:#171c23;color:#e8edf3;text-decoration:none;border-top:1px solid #2b333e;box-shadow:inset 0 10px 0 var(--k);transition:background-color 160ms cubic-bezier(.23,1,.32,1)}.ds-banda:hover{background:#202732}.ds-banda h3{margin:0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:2.4rem;line-height:1;text-transform:uppercase}.ds-banda p{margin:0;font-size:1.05rem}.ds-ir{color:var(--k);font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase}.ds-banda:focus-visible{outline:3px solid #e4ecf6;outline-offset:-6px}"
+    },
+    {
+      "name": "Cabecera de página",
+      "kind": "custom",
+      "refersTo": "page-header",
+      "description": "Cabecera oscura de página de servicio con riel de color de 12 px arriba.",
+      "html": "<header class=\"ds-p-hero\"><h1>Computadores a la medida</h1><p>Armado, mejoras y GPU.</p></header>",
+      "css": ".ds-p-hero{--c:#e5a23c;background:#171c23;color:#e8edf3;box-shadow:inset 0 12px 0 var(--c);padding:52px 16px 40px;border-bottom:1px solid #2b333e}.ds-p-hero h1{margin:0;max-width:16ch;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(2.6rem,9.5vw,5.4rem);line-height:.92;text-transform:uppercase}.ds-p-hero p{margin:18px 0 0;font-size:1.2rem;max-width:52ch}"
+    },
+    {
+      "name": "Cajón de navegación",
+      "kind": "nav",
+      "refersTo": "ground",
+      "description": "Cajón móvil: entra con fundido y 8 px de desplazamiento en 200 ms; filas de 64 px con barra de color por línea.",
+      "html": "<nav class=\"ds-drawer\"><a href=\"#\"><i></i>Mantenimiento</a><a href=\"#\"><i></i>A la medida</a></nav>",
+      "css": ".ds-drawer{background:#0e1217;padding:16px;transition:opacity 200ms cubic-bezier(.23,1,.32,1),transform 200ms cubic-bezier(.23,1,.32,1)}.ds-drawer a{display:flex;align-items:center;gap:14px;min-height:64px;border-bottom:1px solid #2b333e;color:#e8edf3;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.7rem;text-transform:uppercase;text-decoration:none}.ds-drawer i{width:14px;align-self:stretch;margin-block:12px;border-radius:7px;background:#4f8cff;flex:none}.ds-drawer a:nth-child(2) i{background:#e5a23c}.ds-drawer a:focus-visible{outline:3px solid #e4ecf6;outline-offset:-3px}@media (prefers-reduced-motion:reduce){.ds-drawer{transition-duration:.01ms}}"
     }
   ],
   "narrative": {
     "northStar": "El Diagrama de Rutas",
-    "overview": "El sitio se lee como el plano de un sistema de transporte público: cada síntoma es una parada, cada servicio es una línea de color, y las cuatro líneas llegan a una sola estación terminal, Pedro. La superficie es un gris banco de taller (#f3f4f1) con tinta casi negra; el color vive solo en las líneas y en el amarillo señal. Es directo, de señalética, pensado para leerse a plena luz desde el celular.\n\nLa densidad es baja y la jerarquía es de rótulo: títulos condensados en mayúsculas, texto largo en una sans de máxima legibilidad. Las formas son planas, con contornos de tinta de 2 px y rieles gruesos de 10 px; la profundidad se resuelve con color y borde, no con sombra.",
+    "overview": "El sitio se lee como el plano de un sistema de transporte público: cada síntoma es una parada, cada servicio es una línea de color, y las cuatro líneas llegan a una sola estación terminal, Pedro. La superficie es un grafito azulado (#0e1217) con texto casi blanco; el color vive solo en los rieles de las cuatro líneas y en un único acento hielo. Es señalética nocturna: sobria, directa, legible en el celular.\n\nLa densidad es baja y la jerarquía es de rótulo: títulos condensados en mayúsculas, texto largo en una sans de máxima legibilidad. La profundidad es tonal: tres escalones de grafito (fondo, papel, superficie 2) separados por filetes de 1 px, sin sombras de elevación. Las bandas de índice y las cabeceras de página son oscuras con un riel de color en el borde superior; el color de línea nunca llena un bloque grande.",
     "keyCharacteristics": [
-      "Cuatro líneas de color (azul, naranja, verde, rojo) con un solo color activo por página mediante --c / --k.",
-      "Amarillo señal reservado para la estación terminal, el botón principal de WhatsApp, el cierre y la selección de texto.",
+      "Cuatro líneas de color en tonos sobrios de indicador (azul, ámbar, verde agua, coral), con una sola activa por página mediante --c / --k.",
+      "Un solo acento, hielo (#e4ecf6), para el botón principal de WhatsApp, la estación terminal y la banda de cierre.",
       "Rieles de 10 px con paradas circulares con aro: hueco = disponible, lleno = elegida.",
-      "Bordes de tinta de 2 px como estructura; sin sombras de elevación.",
+      "Bandas y cabeceras oscuras con riel de color arriba (10 px en bandas, 12 px en cabeceras de página).",
       "Móvil primero: barra fija inferior con WhatsApp y Llamar, objetivos táctiles de 44 px o más."
     ],
     "rules": [
-      { "name": "The Un-Solo-Amarillo Rule", "body": "El amarillo señala la acción y la estación final; no se usa como resaltador de titulares ni como relleno decorativo.", "section": "colors" },
-      { "name": "The Línea-Por-Página Rule", "body": "Una página de servicio usa una sola línea de color (data-line); el resto del chrome es tinta y neutros.", "section": "colors" },
+      { "name": "The Un-Solo-Hielo Rule", "body": "El hielo es el único acento: señala la acción y la estación final. No se usa para resaltar titulares ni como relleno decorativo, y no se añade un segundo acento.", "section": "colors" },
+      { "name": "The Línea-Por-Página Rule", "body": "Una página de servicio usa una sola línea de color (data-line); el resto del chrome es grafito y texto.", "section": "colors" },
+      { "name": "The Riel-No-Relleno Rule", "body": "El color de línea aparece como riel, punto, chip o aro; las bandas y cabeceras no se rellenan con él.", "section": "colors" },
       { "name": "The Rótulo Rule", "body": "Display y títulos van en Barlow Condensed en mayúsculas; el texto corrido nunca va en condensada.", "section": "typography" },
-      { "name": "The Borde-No-Sombra Rule", "body": "Separa superficies con borde de 2 px o cambio de color; el anillo de foco (3 px tinta + 6 px amarillo) es el único realce con halo.", "section": "elevation" }
+      { "name": "The Tono-No-Sombra Rule", "body": "Separa superficies con un escalón de grafito o un filete de 1 px; el anillo de foco (outline de 3 px en hielo, offset 3 px) es el único realce de interacción.", "section": "elevation" }
     ],
     "dos": [
-      "Do usar una sola línea de color por página de servicio y amarillo solo en acción y estación final.",
+      "Do usar una sola línea de color por página de servicio y el hielo solo en la acción principal, la estación final y el cierre.",
       "Do mantener objetivos táctiles de 44 px o más y la acción de WhatsApp a un toque (barra fija en celular).",
-      "Do estructurar con bordes de tinta de 2 px, rieles de 10 px y paradas con aro.",
-      "Do poner las fotos en monocromo sobre el color de su línea.",
-      "Do usar el easing cubic-bezier(0.23, 1, 0.32, 1) con duraciones de 120–220 ms."
+      "Do estructurar con escalones de grafito, filetes de 1 px, rieles de 10 px y paradas con aro.",
+      "Do dar a bandas y cabeceras fondo oscuro con riel de color arriba.",
+      "Do poner las fotos en monocromo.",
+      "Do usar el easing cubic-bezier(0.23, 1, 0.32, 1) con duraciones de 120–220 ms y respetar prefers-reduced-motion."
     ],
     "donts": [
-      "Don't volver a la plantilla oscura «terminal/cyber» con tarjetas iguales de icono.",
-      "Don't usar resaltador amarillo en titulares.",
+      "Don't llenar bandas o cabeceras con un color de línea saturado.",
+      "Don't añadir un segundo acento ni volver al amarillo anterior.",
+      "Don't usar la plantilla oscura «terminal/cyber» con tarjetas iguales de icono.",
       "Don't poner cifras, métricas o reseñas inventadas en la interfaz.",
-      "Don't usar sombras de elevación; usa borde o color.",
+      "Don't usar sombras de elevación; usa un escalón de grafito o un filete.",
       "Don't componer texto corrido en Barlow Condensed."
     ]
   }
