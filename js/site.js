@@ -30,6 +30,30 @@
       tarjetas.style.setProperty("--px", (((e.clientX - r.left) / r.width) * 2 - 1).toFixed(3));
       tarjetas.style.setProperty("--py", (((e.clientY - r.top) / r.height) * 2 - 1).toFixed(3));
     });
+    // Dedo: deslizar de lado gira las tarjetas; el desplazamiento vertical queda para la página
+    var inicioX = 0, inicioPx = 0, mov = false, activo = false;
+    if (!fino.matches) etiqueta.textContent = base = "Desliza para girar";
+    escenario.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse") return;
+      activo = true; mov = false; inicioX = e.clientX;
+      inicioPx = parseFloat(tarjetas.style.getPropertyValue("--px")) || 0;
+    });
+    escenario.addEventListener("pointermove", function (e) {
+      if (!activo || e.pointerType === "mouse") return;
+      var dx = e.clientX - inicioX;
+      if (!mov && Math.abs(dx) < 6) return;
+      mov = true;
+      tarjetas.classList.remove("auto");
+      tarjetas.classList.add("arrastrando");
+      var r = escenario.getBoundingClientRect();
+      var px = Math.max(-1.4, Math.min(1.4, inicioPx + dx / (r.width * 0.8)));
+      tarjetas.style.setProperty("--px", px.toFixed(3));
+    });
+    var soltar = function () { activo = false; tarjetas.classList.remove("arrastrando"); };
+    escenario.addEventListener("pointerup", soltar);
+    escenario.addEventListener("pointercancel", soltar);
+    // Si fue un arrastre, no se abre la tarjeta
+    escenario.addEventListener("click", function (e) { if (mov) { e.preventDefault(); mov = false; } }, true);
     var poner = function (e) {
       var t = e.target.closest(".tarjeta");
       if (t) etiqueta.textContent = t.dataset.nombre;
