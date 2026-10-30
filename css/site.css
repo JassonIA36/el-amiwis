@@ -312,3 +312,16 @@ li, summary { overflow-wrap: break-word; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+/* Celular: sin animación en bucle ni capas pesadas; las tarjetas giran con el dedo */
+.tarjetas.arrastrando { transition: none; }
+.escenario { contain: layout paint; }
+@media (pointer: coarse) {
+  .tarjetas.auto { animation: none; }
+  .tarjetas { transform: rotateX(-2deg) rotateY(calc(var(--px, 0) * 16deg)); }
+  .tarjeta { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); transition: none; }
+  .hero::before, .p-hero::before { -webkit-mask-image: none; mask-image: none; opacity: 0.6; }
+  .escenario { height: 340px; touch-action: pan-y; }
+}
+.etiqueta { bottom: 0; }
+@media (max-width: 899px) { .tarjeta.texto i { display: none; } }
