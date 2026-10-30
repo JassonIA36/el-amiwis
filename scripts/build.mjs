@@ -63,6 +63,18 @@ const LINEAS = [
   },
 ];
 
+// Tarjetas que flotan en la portada: [clase, enlace, nombre, imagen (o null = tarjeta de texto)]
+const TARJETAS = [
+  ['t1', 'servicios-tecnicos.html', 'Cambio de pasta térmica', 'pasta'],
+  ['t2', 'servicios-tecnicos.html', 'Upgrade de SSD', 'ssd'],
+  ['t3', 'computadoras-gpu.html', 'PC a la medida', 'pc'],
+  ['t4', 'computadoras-gpu.html', 'Tarjetas gráficas', 'gpu'],
+  ['t5', 'impresoras-soporte-remoto.html', 'Impresoras de tinta continua', 'ecotank'],
+  ['t6', 'impresoras-soporte-remoto.html', 'Impresoras láser', 'laser'],
+  ['t7', 'software-perifericos.html', 'Software y licencias', null],
+  ['t8', 'impresoras-soporte-remoto.html', 'Soporte remoto', null],
+];
+
 // ---------------------------------------------------------------- preguntas frecuentes (inicio)
 const FAQ = [
   ['¿Cuánto cuesta el mantenimiento de un computador en Bogotá?',
@@ -247,8 +259,7 @@ function head({ title, desc, file, ogImage, ld, line }) {
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="preload" href="fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/site.css">
 <script>document.documentElement.classList.add('js')</script>
 ${ldTxt}
@@ -295,7 +306,7 @@ function bandas(excluir) {
 function cierre(texto) {
   return `<section class="cierre">
   <div class="wrap">
-    <h2>Última parada: escríbele a Pedro</h2>
+    <h2>Cuéntale a Pedro qué le pasa a tu equipo</h2>
     <p>Cuéntale qué le pasa a tu equipo. Diagnóstico honesto y presupuesto claro, sin compromiso.</p>
     <div class="acciones">
       <a class="btn btn-ink" href="${waLink(texto)}" target="_blank" rel="noopener">${ICON.chat}WhatsApp ${TEL}</a>
@@ -347,7 +358,7 @@ function mapaHTML() {
   return `<div class="mapa" id="mapa">
   ${lineas}
   <div class="terminal" id="terminal">
-    <div class="cabeza"><h3>Pedro Roa</h3>
+    <div class="cabeza"><span class="orbe" aria-hidden="true"></span><h3>Pedro Roa</h3>
     <p class="sub">Estación final · Bogotá</p></div>
     <ul class="viaje" id="viaje" aria-live="polite"><li class="vacio">Elige una o más paradas y tu mensaje se arma solo.</li></ul>
     <div class="cuerpo"><label for="equipo">Marca y modelo de tu equipo (opcional)</label>
@@ -378,20 +389,33 @@ function indexHTML(meta) {
 ${header('index.html')}
 <main id="contenido">
   <section class="hero">
-    <div class="wrap">
-      <div class="hero-top">
-        <h1>Servicio técnico de <em>computadores y portátiles</em> en Bogotá</h1>
-        <div>
-          <p class="lead">Pedro Roa revisa, repara y arma computadores, portátiles e impresoras. <strong>Elige qué le pasa a tu equipo</strong> y se lo mandas por WhatsApp ya explicado.</p>
-          <div class="hero-meta"><span>A domicilio en Bogotá</span><span>En laboratorio</span><span>Soporte remoto por AnyDesk</span></div>
+    <div class="wrap hero-grid">
+      <div class="hero-texto">
+        <h1>Servicio técnico de computadores y portátiles en Bogotá</h1>
+        <p class="lead">Pedro Roa revisa, repara y arma computadores, portátiles e impresoras. <strong>Elige qué le pasa a tu equipo</strong> y se lo mandas por WhatsApp ya explicado.</p>
+        <div class="hero-acciones">
+          <a class="btn btn-wa" href="${waLink('Hola Pedro, vi tu página y quiero consultar por mi equipo.')}" target="_blank" rel="noopener">${ICON.chat}Escribir por WhatsApp</a>
+          <a class="btn btn-ghost" href="#mapa">Describir mi caso</a>
         </div>
+        <div class="hero-meta"><span>A domicilio en Bogotá</span><span>En laboratorio</span><span>Soporte remoto por AnyDesk</span></div>
       </div>
-      <div class="mapa-head">
-        <h2>¿Qué le pasa a tu equipo?</h2>
-        <p>Toca las paradas que describen tu caso. Todas las líneas llegan a Pedro.</p>
+      <div class="escenario" id="escenario">
+        <div class="tarjetas auto" id="tarjetas">
+          ${TARJETAS.map(([clase, href, nombre, img]) => img
+            ? `<a class="tarjeta ${clase}" href="${href}" data-nombre="${nombre}" aria-label="${nombre}"><img src="assets/cards/${img}.webp" width="720" height="450" alt="" decoding="async"></a>`
+            : `<a class="tarjeta texto ${clase}" href="${href}" data-nombre="${nombre}" aria-label="${nombre}"><i></i><b>${nombre}</b></a>`).join('\n          ')}
+        </div>
+        <span class="etiqueta" id="etiqueta" aria-hidden="true">Servicios de Pedro</span>
       </div>
-      ${mapaHTML()}
     </div>
+  </section>
+
+  <section class="wrap" id="sintomas">
+    <div class="mapa-head">
+      <h2>¿Qué le pasa a tu equipo?</h2>
+      <p>Toca las paradas que describen tu caso. Todas las líneas llegan a Pedro.</p>
+    </div>
+    ${mapaHTML()}
   </section>
 
   <section class="lineas">
