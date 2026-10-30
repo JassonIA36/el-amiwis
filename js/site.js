@@ -16,6 +16,31 @@
     window.matchMedia('(min-width: 900px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
   }
 
+  // ---- Servicios flotando: sigue al puntero y muestra el nombre de la tarjeta ----
+  var escenario = document.getElementById("escenario");
+  if (escenario) {
+    var tarjetas = document.getElementById("tarjetas");
+    var etiqueta = document.getElementById("etiqueta");
+    var base = etiqueta.textContent;
+    var fino = window.matchMedia("(hover: hover) and (pointer: fine)");
+    escenario.addEventListener("pointermove", function (e) {
+      if (!fino.matches || e.pointerType !== "mouse") return;
+      var r = escenario.getBoundingClientRect();
+      tarjetas.classList.remove("auto");
+      tarjetas.style.setProperty("--px", (((e.clientX - r.left) / r.width) * 2 - 1).toFixed(3));
+      tarjetas.style.setProperty("--py", (((e.clientY - r.top) / r.height) * 2 - 1).toFixed(3));
+    });
+    var poner = function (e) {
+      var t = e.target.closest(".tarjeta");
+      if (t) etiqueta.textContent = t.dataset.nombre;
+    };
+    var quitar = function () { etiqueta.textContent = base; };
+    escenario.addEventListener("pointerover", poner);
+    escenario.addEventListener("focusin", poner);
+    escenario.addEventListener("pointerleave", quitar);
+    escenario.addEventListener("focusout", quitar);
+  }
+
   // ---- Mapa de síntomas ----
   var mapa = document.getElementById('mapa');
   if (!mapa) return;

@@ -1,236 +1,227 @@
 ---
 name: Pedro Roa – Computer Technology
-description: Diagrama de rutas de diagnóstico en tema grafito; cuatro líneas de color que terminan en una sola estación hielo, Pedro.
+description: Negro casi puro con cuadrícula tenue, Geist apretada, píldoras blancas y un único verde luminoso que solo se enciende cuando el visitante elige; los servicios flotan en 3D.
 colors:
-  ground: "#0e1217"
-  paper: "#171c23"
-  surface-2: "#202732"
-  ink: "#e8edf3"
-  ink-2: "#a8b2bf"
-  rule: "#2b333e"
-  ice: "#e4ecf6"
-  ice-ink: "#0b0f14"
-  ink-button-hover: "#1c2430"
-  line-azul: "#4f8cff"
-  line-naranja: "#e5a23c"
-  line-verde: "#33c3a3"
-  line-rojo: "#f26b76"
+  ground: "#0a0a0a"
+  surface: "#111214"
+  surface-2: "#181a1d"
+  ink: "#fafafa"
+  ink-2: "#a3a6ab"
+  rule: "#25272a"
+  rail: "#3a3d42"
+  stop-ring: "#8b8f95"
+  accent: "#5cff9d"
+  accent-ink: "#04130a"
 typography:
   display:
-    fontFamily: "Barlow Condensed, Barlow Fallback, Arial Narrow, sans-serif"
-    fontSize: "clamp(2.7rem, 10.5vw, 4.9rem)"
-    fontWeight: 800
-    lineHeight: 0.92
-    letterSpacing: "-0.015em"
+    fontFamily: "Geist, Geist Fallback, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(2.6rem, 5.2vw, 4.6rem)"
+    fontWeight: 500
+    lineHeight: 0.98
+    letterSpacing: "-0.04em"
   headline:
-    fontFamily: "Barlow Condensed, Barlow Fallback, Arial Narrow, sans-serif"
-    fontSize: "clamp(2rem, 6vw, 3.2rem)"
-    fontWeight: 800
-    lineHeight: 1
-    letterSpacing: "-0.01em"
+    fontFamily: "Geist, Geist Fallback, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(2rem, 6vw, 3.4rem)"
+    fontWeight: 500
+    lineHeight: 1.02
+    letterSpacing: "-0.04em"
   title:
-    fontFamily: "Barlow Condensed, Barlow Fallback, Arial Narrow, sans-serif"
-    fontSize: "1.32rem"
-    fontWeight: 700
-    lineHeight: 1.3
-    letterSpacing: "0.005em"
+    fontFamily: "Geist, Geist Fallback, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.5rem"
+    fontWeight: 500
+    lineHeight: 1.02
+    letterSpacing: "-0.04em"
   body:
-    fontFamily: "Atkinson Hyperlegible, Atkinson Fallback, system-ui, sans-serif"
+    fontFamily: "Geist, Geist Fallback, Helvetica Neue, Arial, sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "Barlow Condensed, Barlow Fallback, Arial Narrow, sans-serif"
-    fontSize: "1.25rem"
-    fontWeight: 800
-    letterSpacing: "0.01em"
+    fontFamily: "Geist, Geist Fallback, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1rem"
+    fontWeight: 500
+    lineHeight: 1.15
+    letterSpacing: "-0.01em"
 rounded:
-  sm: "8px"
-  field: "10px"
-  md: "12px"
-  lg: "16px"
-  xl: "18px"
+  focus: "8px"
+  brand: "10px"
+  field: "12px"
+  card: "14px"
+  panel: "20px"
   pill: "999px"
 spacing:
-  gutter-sm: "16px"
-  gutter-md: "28px"
-  gutter-lg: "40px"
+  gutter-sm: "20px"
+  gutter-md: "32px"
+  gutter-lg: "48px"
   max: "1180px"
-  rail: "10px"
+  section: "88px"
+  bar-h: "76px"
 components:
-  button-wa:
-    backgroundColor: "{colors.ice}"
-    textColor: "{colors.ice-ink}"
+  button-primary:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.ground}"
     rounded: "{rounded.pill}"
-    padding: "0 22px"
+    padding: "0 24px"
     height: "52px"
-  button-ink:
-    backgroundColor: "{colors.ice-ink}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.pill}"
-    padding: "0 22px"
-    height: "52px"
-  button-ink-hover:
-    backgroundColor: "{colors.ink-button-hover}"
   button-ghost:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
     rounded: "{rounded.pill}"
+    padding: "0 24px"
     height: "52px"
-  line-chip:
-    backgroundColor: "{colors.line-azul}"
-    textColor: "{colors.ice-ink}"
+  chip-service:
+    backgroundColor: "transparent"
+    textColor: "{colors.ink}"
     rounded: "{rounded.pill}"
+    padding: "6px 14px"
     height: "36px"
-    padding: "0 14px"
-  banda:
-    backgroundColor: "{colors.paper}"
+  card-float:
+    backgroundColor: "{colors.surface}"
     textColor: "{colors.ink}"
-    padding: "34px 16px 22px"
-  banda-hover:
-    backgroundColor: "{colors.surface-2}"
-  page-header:
-    backgroundColor: "{colors.paper}"
+    rounded: "{rounded.card}"
+  panel-terminal:
+    backgroundColor: "{colors.surface}"
     textColor: "{colors.ink}"
-    padding: "52px 16px 40px"
-  terminal:
-    backgroundColor: "{colors.ice}"
-    textColor: "{colors.ice-ink}"
-    rounded: "{rounded.xl}"
-    padding: "22px 18px 20px"
+    rounded: "{rounded.panel}"
+    padding: "30px 32px 28px"
   field:
-    backgroundColor: "#ffffff"
-    textColor: "{colors.ice-ink}"
-    rounded: "{rounded.field}"
-    height: "48px"
-  note-box:
-    backgroundColor: "{colors.paper}"
+    backgroundColor: "{colors.ground}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.lg}"
-    padding: "20px"
+    rounded: "{rounded.field}"
+    height: "50px"
+    padding: "0 16px"
+  banda:
+    backgroundColor: "{colors.ground}"
+    textColor: "{colors.ink}"
+    padding: "34px 48px"
+  banda-hover:
+    backgroundColor: "{colors.surface}"
+  note-box:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.panel}"
+    padding: "24px"
 ---
 
 # Design System: Pedro Roa – Computer Technology
 
 ## Overview
 
-**Creative North Star: "El Diagrama de Rutas"**
+**Creative North Star: "El Diagrama de Rutas, de noche"**
 
-El sitio se lee como el plano de un sistema de transporte público: cada síntoma es una parada, cada servicio es una línea de color, y las cuatro líneas llegan a una sola estación terminal, Pedro. La superficie es un grafito azulado (#0e1217) con texto casi blanco; el color vive solo en los rieles de las cuatro líneas y en un único acento hielo. Es señalética nocturna: sobria, directa, legible en el celular.
+El sitio conserva la idea de un plano de rutas (síntomas como paradas, una estación final, Pedro), pero ahora la interfaz es monocroma: negro casi puro (#0a0a0a) con una cuadrícula de 56 px apenas visible detrás de la portada, texto blanco y una sola tipografía, Geist, fina y apretada. El color no vive en la interfaz: viene de las fotos de los servicios. El único color de marca es un verde luminoso que se enciende solo cuando el visitante elige algo.
 
-La densidad es baja y la jerarquía es de rótulo: títulos condensados en mayúsculas, texto largo en una sans de máxima legibilidad. La profundidad es tonal: tres escalones de grafito (fondo, papel, superficie 2) separados por filetes de 1 px, sin sombras de elevación. Las bandas de índice y las cabeceras de página son oscuras con un riel de color en el borde superior; el color de línea nunca llena un bloque grande.
+La densidad es baja y la jerarquía sale del tamaño y del contraste (blanco frente a gris), no de mayúsculas ni de rótulos. Los servicios de la portada flotan como tarjetas inclinadas en perspectiva 3D, siguen al puntero y derivan despacio solas; son la única pieza espectacular, y todo lo demás es plano y quieto.
 
 **Key Characteristics:**
-- Cuatro líneas de color en tonos sobrios de indicador (azul, ámbar, verde agua, coral), con una sola activa por página mediante `--c` / `--k`.
-- Un solo acento, hielo (#e4ecf6), para el botón principal de WhatsApp, la estación terminal y la banda de cierre.
-- Rieles de 10 px con paradas circulares con aro: hueco = disponible, lleno = elegida.
-- Bandas y cabeceras oscuras con riel de color arriba (10 px en bandas, 12 px en cabeceras de página).
-- Móvil primero: barra fija inferior con WhatsApp y Llamar, objetivos táctiles de 44 px o más.
+- Interfaz monocroma sobre #0a0a0a; el verde (#5cff9d) aparece solo en paradas elegidas, puntos del mensaje, el orbe de la estación, foco y selección de texto.
+- Geist variable, sentence case, tracking -0.04em en títulos.
+- Botones en píldora blancos; el contorno fantasma como alternativa.
+- Tarjetas de servicio en 3D con parallax por puntero y deriva lenta, detenida con `prefers-reduced-motion`.
+- Móvil primero: barra fija inferior con WhatsApp y Llamar, objetivos de 44 px o más (salvo las excepciones anotadas abajo).
 
 ## Colors
 
-Paleta grafito: tres escalones oscuros, texto frío claro, cuatro colores de línea y un acento hielo casi blanco.
+Paleta de un solo tono neutro más un acento: negro, tres escalones de gris, texto blanco y un verde que se gana su aparición.
 
 ### Primary
-- **Hielo** (#e4ecf6): único acento. Botón principal de WhatsApp, estación terminal, banda de cierre y anillo de foco. Siempre con texto Tinta de Hielo.
-- **Tinta de Hielo** (#0b0f14): texto sobre hielo y sobre los chips de línea; también el fondo del botón oscuro.
-
-### Secondary (las cuatro líneas)
-- **Línea Azul** (#4f8cff): mantenimiento y servicios técnicos; color por defecto (`--c`).
-- **Línea Ámbar** (#e5a23c): computadores a la medida y GPU.
-- **Línea Verde Agua** (#33c3a3): impresoras y soporte remoto.
-- **Línea Coral** (#f26b76): software y periféricos.
-
-Cada línea tiñe su riel, su chip (con texto Tinta de Hielo), el riel superior de su banda y de la cabecera de su página, y el punto de navegación.
+- **Verde Estación** (accent): único acento. Parada elegida (relleno con halo), puntos de cada línea del mensaje, orbe de la estación, anillo de foco, borde de campo en foco y color de selección de texto.
+- **Tinta Verde** (accent-ink): texto sobre selección en verde.
 
 ### Neutral
-- **Grafito** (#0e1217): fondo de página, encabezado, cajón y barra fija.
-- **Papel Grafito** (#171c23): bandas, cabeceras de página, cajas de nota, tablas y centro de las paradas.
-- **Superficie 2** (#202732): hover de bandas y de enlaces de navegación.
-- **Texto** (#e8edf3): texto principal, aros de paradas y rieles de proceso.
-- **Texto Suave** (#a8b2bf): párrafos de apoyo y metadatos.
-- **Filete** (#2b333e): divisores de 1 px.
+- **Negro Casi Puro** (ground): fondo de página, encabezado, cajón, barra fija y centro de las paradas.
+- **Superficie** (surface): terminal, cajas de nota, marcos de foto, hover de bandas.
+- **Superficie 2** (surface-2): enlace de navegación activo.
+- **Blanco** (ink): texto principal, botones primarios, líneas del icono.
+- **Gris Suave** (ink-2): párrafos de apoyo y metadatos.
+- **Filete** (rule): divisores de 1 px y bordes de paneles.
+- **Riel** (rail): línea vertical de 2 px que une paradas, pasos y modos; contorno de los chips de servicio.
+- **Aro de Parada** (stop-ring): borde de 2 px de las paradas sin elegir.
 
 ### Named Rules
-**The Un-Solo-Hielo Rule.** El hielo es el único acento: señala la acción y la estación final. No se usa para resaltar titulares ni como relleno decorativo, y no se añade un segundo acento.
-**The Línea-Por-Página Rule.** Una página de servicio usa una sola línea de color (`data-line`); el resto del chrome es grafito y texto.
-**The Riel-No-Relleno Rule.** El color de línea aparece como riel, punto, chip o aro; las bandas y cabeceras no se rellenan con él.
+**The Verde-Que-Se-Gana Rule.** El verde solo se enciende como respuesta a una elección del visitante (parada, punto del mensaje) o como marca de la estación (orbe). No colorea titulares, botones, enlaces ni rellenos decorativos.
+**The Interfaz-Monocroma Rule.** Todo lo demás es negro, gris o blanco; el color entra por las fotos y la esfera verde de las tarjetas de texto.
 
 ## Typography
 
-**Display Font:** Barlow Condensed 600/700/800 (con Barlow Fallback de métricas ajustadas, Arial Narrow)
-**Body Font:** Atkinson Hyperlegible 400/700 (con Atkinson Fallback, system-ui)
+**Display / Body / Label Font:** Geist variable 300–700 (con Geist Fallback de métricas ajustadas, Helvetica Neue, Arial)
 
-**Character:** Rótulo de estación frente a texto de manual: condensada y contundente para nombrar paradas y líneas, hiperlegible para explicar.
+**Character:** una sola familia que cambia de voz por tamaño y gris: títulos grandes, apretados y de peso medio; texto corrido en 400 con gris suave. Sentence case siempre.
 
 ### Hierarchy
-- **Display** (800, clamp(2.7rem, 10.5vw, 4.9rem), 0.92): h1 de portada, en mayúsculas; el h1 de servicio llega a 5.4rem.
-- **Headline** (800, clamp(2rem, 6vw, 3.2rem), 1): h2 de sección, en mayúsculas.
-- **Title** (700, 1.32rem–2.3rem, 1.3 / 1): paradas, estaciones, pasos y preguntas (summary 1.45rem).
-- **Body** (400, 1.0625rem, 1.6): texto corrido, máximo 68ch.
-- **Label** (800, 1.25rem, 0.01em, mayúsculas): botones, nombre de línea; navegación en 700, 1.08rem.
+- **Display** (500, clamp(2.6rem, 5.2vw, 4.6rem) en escritorio y 9.5vw hasta 5.2rem en celular, 0.98): h1 de portada; el h1 de servicio llega a 5rem; el h2 de cierre a 5rem.
+- **Headline** (500, clamp(2rem, 6vw, 3.4rem), 1.02): h2 de sección; h3 de banda hasta 2.7rem.
+- **Title** (500, 1.5rem, 1.02): pasos, modos, estaciones (hasta 2.2rem) y título de la terminal (2rem).
+- **Body** (400, 1.0625rem, 1.6): texto corrido, máximo 64ch, gris suave en párrafos secundarios.
+- **Label** (500, 0.95–1rem, -0.01em): botones, navegación, chips de servicio. Paradas en 1.1rem con tracking -0.02em.
 
 ### Named Rules
-**The Rótulo Rule.** Display y títulos van en Barlow Condensed en mayúsculas; el texto corrido nunca va en condensada.
+**The Apretado-Fino Rule.** Todo título de h1 a h4 va en peso 500 con tracking -0.04em y sentence case; nunca mayúsculas ni negritas pesadas.
 
 ## Layout
 
-Contenedor `.wrap` de 1180 px máximo con gutter de 16 px (celular), 28 px (desde 720 px) y 40 px (desde 1100 px). El punto de quiebre estructural es 900 px: debajo, navegación en cajón y barra fija inferior (`--bar-h` 72 px) con WhatsApp y Llamar; encima, navegación en línea y botón de WhatsApp en el encabezado.
+Contenedor `.wrap` de 1180 px máximo con gutter de 20 px (celular), 32 px (desde 720 px) y 48 px (desde 1100 px). El punto de quiebre estructural es 900 px: debajo, navegación en cajón y barra fija inferior (76 px) con WhatsApp y Llamar; encima, navegación en línea y WhatsApp en el encabezado.
 
-El mapa de portada pasa de una línea apilada a cuatro columnas verticales (gap 28 px) que bajan juntas hacia la estación terminal de ancho completo. Las páginas de servicio llevan una cabecera oscura con riel de color (7fr/5fr en escritorio), el trayecto de estaciones (máx. 880 px), texto local en dos columnas y cierre hielo. Las bandas de índice son de ancho completo con contenido alineado al contenedor. Ritmo vertical entre secciones: 48, 64 y 72 px.
+La portada es una rejilla 5fr/7fr en escritorio (titular a la izquierda, escenario 3D de 560 px a la derecha); en celular, titular y debajo un escenario de 380 px. El mapa de síntomas pasa de una columna a cuatro (gap 28 px) con la terminal de ancho completo debajo, en dos columnas. Las páginas de servicio llevan cabecera 7fr/5fr con foto inclinada, trayecto de estaciones (máx. 860 px) y texto local en dos columnas. Ritmo vertical entre secciones: 88 px (96 px antes del cierre).
 
 ## Elevation & Depth
 
-Plano y tonal: la profundidad sale de los escalones grafito (fondo, papel, superficie 2) y de filetes de 1 px, no de sombras difusas. Las únicas `box-shadow` son rieles y anillos de estado: el riel superior inset de bandas (10 px) y cabeceras (12 px), el anillo de la parada elegida (anillo papel + anillo de línea) y el contorno interior del botón fantasma.
+Plano y tonal, con una excepción: la profundidad real (eje Z) solo la tienen las tarjetas flotantes de la portada y la foto inclinada de las páginas de servicio. Todo lo demás se separa con un escalón de gris y un filete de 1 px.
+
+### Shadow Vocabulary
+- **Tarjeta flotante** (`box-shadow: 0 24px 48px rgba(0,0,0,0.55)`; en hover `0 30px 60px rgba(0,0,0,0.7)`): sombra suave y ancha que asienta tarjetas 3D y la foto de cabecera.
+- **Halo de parada** (`0 0 0 5px rgba(92,255,157,0.16), 0 0 18px rgba(92,255,157,0.5)`): resplandor verde de la parada elegida.
+- **Orbe** (`0 0 28px rgba(92,255,157,0.35)`): brillo de la estación.
+- **Contorno fantasma** (`inset 0 0 0 1px rgba(255,255,255,0.28)`; hover blanco pleno): borde de botón fantasma.
 
 ### Named Rules
-**The Tono-No-Sombra Rule.** Separa superficies con un escalón de grafito o un filete de 1 px; el anillo de foco (outline de 3 px en hielo, offset 3 px) es el único realce de interacción.
+**The Profundidad-Solo-En-La-Portada Rule.** Perspectiva, inclinación y sombra amplia pertenecen a las tarjetas de servicio y a la foto de cabecera; paneles, bandas y campos se quedan planos.
 
 ## Shapes
 
-Lenguaje de pastilla y señal: botones y chips totalmente redondos (999 px), contenedores grandes en 16–18 px, campos 10 px, marca 10 px, botón de menú 12 px, enlaces de navegación 8 px. Paradas = círculo de 22 px con aro de 5 px; rieles = barra de 10 px con extremos redondeados. Las fotos van en monocromo (en la portada multiplicadas sobre el color de línea; en cabeceras de página, grises con filete) con esquinas de 18 px.
+Píldora y panel: botones, chips de servicio y enlaces de navegación totalmente redondos (999 px); tarjetas flotantes 14 px; terminal, cajas de nota y marcos de foto 20 px; campos 12 px; marca 10 px; anillo de foco 8 px. Paradas, pasos y modos son círculos de 14 px con aro de 2 px sobre un riel de 2 px. Las esferas verdes (orbe de 44 px, punto de 18 px en tarjetas de texto) son radiales con brillo en el cuadrante superior izquierdo.
 
 ## Components
 
 ### Buttons
-- **Shape:** pastilla completa (999 px), alto mínimo 52 px (44 px en el encabezado), Barlow Condensed 800 en mayúsculas.
-- **Primary (`btn-wa`):** hielo con Tinta de Hielo.
-- **Secondary:** `btn-ink` (Tinta de Hielo con texto claro, hover #1c2430 solo con puntero) y `btn-ghost` (contorno interior de 2 px en texto, hover invierte a texto claro sobre Tinta de Hielo).
+- **Shape:** píldora (999 px), alto mínimo 52 px (44 px en el encabezado), Geist 500 a 1rem.
+- **Primary (`btn-wa`, `btn-ink`):** fondo blanco, texto negro; hover con halo blanco de 4 px al 12 %, solo con puntero fino.
+- **Ghost:** transparente con contorno interior blanco al 28 %, hover a contorno blanco pleno.
 - **Press:** escala 0.97 en 140 ms con `cubic-bezier(0.23, 1, 0.32, 1)`.
 
-### Parada (signature)
-Botón de fila de 52 px mínimo con círculo de centro papel y aro claro sobre el riel; al elegirse el círculo se llena, crece 1.12 y gana anillo papel + color de línea; el texto se subraya en color de línea.
+### Tarjetas flotantes (signature)
+Ocho tarjetas 16:10 (seis con foto, dos de texto con esfera verde) dispuestas con variables `--x --y --w --z --ry --rz` dentro de un escenario con `perspective: 1100px`. El contenedor rota hasta 9° en Y y 5° en X según el puntero (solo ratón); sin puntero deriva entre ±8° en 14 s con alternancia, y esa animación solo existe con `prefers-reduced-motion: no-preference`. Hover o foco adelantan la tarjeta 70 px y la enderezan; una etiqueta píldora blanca bajo el escenario muestra el nombre de la tarjeta activa. La octava tarjeta solo aparece desde 900 px.
 
-### Estación terminal (signature)
-Bloque hielo de radio 18 px (0 0 18px 18px en escritorio, uniéndose al mapa). Contiene el resumen del viaje, un campo blanco de 48 px con borde de 2 px y el botón de envío por WhatsApp con mensaje redactado. Es una de las pocas superficies claras del sitio.
+### Parada y mensaje (signature)
+Botón de fila de 56 px mínimo con círculo de 14 px y aro gris sobre el riel; al elegirse se rellena de verde, crece 1.2 y gana halo. La terminal (panel de 20 px, orbe verde, lista de puntos verdes con el viaje, campo y botón blanco de WhatsApp) arma el mensaje con las paradas elegidas.
 
 ### Navigation
-Barra superior pegajosa sobre Grafito con filete inferior de 1 px; enlaces en Barlow 700 mayúsculas con punto del color de su línea, subrayado interior de 3 px en la página actual y hover en Superficie 2. En celular, botón de menú de 48 px con contorno de 2 px y un cajón a pantalla completa (filas de 64 px, barra de color por línea) que entra con fundido y desplazamiento de 8 px en 200 ms con el easing del sistema; el icono del menú se transforma en equis en 200 ms.
+Barra superior pegajosa en negro al 92 % con filete inferior; enlaces en píldora gris suave, el activo en Superficie 2 y blanco. En celular, botón de menú circular de 46 px con contorno al 28 % y un cajón a pantalla completa (filas de 68 px, 1.7rem) que entra con fundido y 8 px de desplazamiento en 200 ms.
 
-### Bandas, cabeceras y pruebas
-- **Banda de índice:** ancho completo en Papel Grafito, filete superior de 1 px y riel de color de 10 px arriba; hover a Superficie 2 y flecha que se desplaza 6 px (200 ms).
-- **Cabecera de página:** Papel Grafito con riel de color de 12 px arriba y filete inferior.
-- **Trayecto / proceso / modos:** riel de 10 px con círculo con aro por paso (en proceso y modos el riel es del color de texto; en el trayecto, del color de línea).
-- **FAQ:** `details` con filetes de 1 px, indicador circular y signo más que rota 45 grados (220 ms).
-- **Caja de nota y tabla:** Papel Grafito con borde de 1 px, radio 16 px; encabezados de tabla en Barlow mayúsculas sobre Grafito.
+### Bandas, trayecto y FAQ
+- **Banda de índice:** ancho completo, filete superior, hover a Superficie con flecha que se desplaza 6 px.
+- **Proceso / modos / estaciones:** riel de 2 px con círculos con aro por paso.
+- **FAQ:** `details` con filetes y signo más dibujado que rota 45° en 220 ms.
+- **Foto:** marco de 20 px; en secciones en escala de grises (`grayscale(1) contrast(1.1) brightness(0.85)`), a color e inclinada en la cabecera de servicio.
 
 ### Movimiento
-Un solo easing, `cubic-bezier(0.23, 1, 0.32, 1)`, con duraciones de 120 a 220 ms. Con `prefers-reduced-motion: reduce` el desplazamiento suave se desactiva y toda transición o animación baja a 0.01 ms.
+Un solo easing, `cubic-bezier(0.23, 1, 0.32, 1)`, con 140–220 ms en la interfaz y 400–600 ms en el escenario 3D. Con `prefers-reduced-motion: reduce` el desplazamiento suave se desactiva y toda transición o animación baja a 0.01 ms.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** usar una sola línea de color por página de servicio y el hielo solo en la acción principal, la estación final y el cierre.
-- **Do** mantener objetivos táctiles de 44 px o más y la acción de WhatsApp a un toque (barra fija en celular).
-- **Do** estructurar con escalones de grafito, filetes de 1 px, rieles de 10 px y paradas con aro.
-- **Do** dar a bandas y cabeceras fondo oscuro con riel de color arriba.
-- **Do** poner las fotos en monocromo.
-- **Do** usar el easing `cubic-bezier(0.23, 1, 0.32, 1)` con duraciones de 120–220 ms y respetar `prefers-reduced-motion`.
+- **Do** usar solo negro, grises y blanco en la interfaz y reservar el verde (#5cff9d) para elecciones del visitante y la estación.
+- **Do** componer títulos en Geist 500, sentence case y tracking -0.04em.
+- **Do** hacer los botones en píldora blanca (52 px) y la acción de WhatsApp a un toque.
+- **Do** limitar la profundidad 3D y la sombra amplia a las tarjetas flotantes y la foto de cabecera.
+- **Do** dejar el color a las fotos y mantener las fotos de sección en escala de grises.
+- **Do** respetar `prefers-reduced-motion` y usar el easing `cubic-bezier(0.23, 1, 0.32, 1)`.
 
 ### Don't:
-- **Don't** llenar bandas o cabeceras con un color de línea saturado.
-- **Don't** añadir un segundo acento ni volver al amarillo anterior.
-- **Don't** usar la plantilla oscura «terminal/cyber» con tarjetas iguales de icono.
+- **Don't** pintar botones, enlaces o titulares de verde ni añadir un segundo acento.
+- **Don't** volver a las cuatro líneas de color, a Barlow Condensed, a Atkinson ni a los títulos en mayúsculas del sistema anterior.
 - **Don't** poner cifras, métricas o reseñas inventadas en la interfaz.
-- **Don't** usar sombras de elevación; usa un escalón de grafito o un filete.
-- **Don't** componer texto corrido en Barlow Condensed.
+- **Don't** aplicar perspectiva o inclinación a paneles, bandas, campos o texto corrido.
+- **Don't** hacer depender la tarjeta 3D del puntero: debe funcionar con el dedo y con teclado (foco).
+
+Defectos de la construcción que no se canonizan: `--k`, `--i` y `data-line` se siguen generando en `build.mjs` y copiándose en `site.js`, pero ya no tienen estilo en `site.css`; los enlaces de línea (`.linea-nombre a`, 36 px) y del pie (`.foot a`, 36 px) quedan bajo el objetivo táctil de 44 px; y el hover de `.btn-ink` (#ffffff) apenas se distingue del reposo (#fafafa).

@@ -1,0 +1,50 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist",
+        "createdAt": "2026-10-30T00:45:15.545Z",
+        "reason": "referencia pedida por el usuario (pacomepertant.com usa una grotesca neutra apretada); elegida por mí, sin confirmación explícita de la fuente"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "*.html"
+        ],
+        "createdAt": "2026-10-30T00:45:28.629Z",
+        "reason": "punto luminoso único de la referencia que el usuario pidió seguir; solo paradas elegidas y orbe (decisión mía, sin confirmación explícita del detalle)"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "*.html"
+        ],
+        "createdAt": "2026-10-30T00:45:29.249Z",
+        "reason": "cuadrícula tenue de la referencia pedida por el usuario (decisión mía, sin confirmación explícita del detalle)"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "css/site.css"
+        ],
+        "createdAt": "2026-10-30T00:45:29.855Z",
+        "reason": "punto luminoso único de la referencia que el usuario pidió seguir; solo paradas elegidas y orbe (decisión mía, sin confirmación explícita del detalle)"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "css/site.css"
+        ],
+        "createdAt": "2026-10-30T00:45:30.466Z",
+        "reason": "cuadrícula tenue de la referencia pedida por el usuario (decisión mía, sin confirmación explícita del detalle)"
+      }
+    ]
+  }
+}

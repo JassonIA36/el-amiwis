@@ -1,37 +1,40 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-29T12:00:00Z",
+  "generatedAt": "2026-10-29T18:00:00Z",
   "title": "Design System: Pedro Roa – Computer Technology",
   "extensions": {
     "colorMeta": {
-      "ice": { "role": "primary", "displayName": "Hielo", "canonical": "#e4ecf6", "tonalRamp": ["#1b222b", "#3a4552", "#5b6877", "#7f8d9e", "#a5b3c4", "#c4d1e0", "#e4ecf6", "#f4f8fc"] },
-      "ice-ink": { "role": "primary", "displayName": "Tinta de Hielo", "canonical": "#0b0f14", "tonalRamp": ["#0b0f14", "#141a22", "#1e2630", "#2b3541", "#3a4554", "#5d6672", "#8a929c", "#c0c5ca"] },
-      "line-azul": { "role": "secondary", "displayName": "Línea Azul", "canonical": "#4f8cff", "tonalRamp": ["#0b2250", "#133a86", "#1d54c0", "#3a74ee", "#4f8cff", "#85adff", "#b6ceff", "#e2ecff"] },
-      "line-naranja": { "role": "secondary", "displayName": "Línea Ámbar", "canonical": "#e5a23c", "tonalRamp": ["#3d2703", "#6b4508", "#996410", "#c4821f", "#e5a23c", "#eebb6f", "#f5d4a3", "#fbefdb"] },
-      "line-verde": { "role": "secondary", "displayName": "Línea Verde Agua", "canonical": "#33c3a3", "tonalRamp": ["#04302a", "#085247", "#0e7565", "#1a9a84", "#33c3a3", "#6ad6bc", "#a1e6d5", "#d9f5ee"] },
-      "line-rojo": { "role": "secondary", "displayName": "Línea Coral", "canonical": "#f26b76", "tonalRamp": ["#450c12", "#7a1a24", "#aa2b38", "#d54a56", "#f26b76", "#f6959d", "#fabfc4", "#fde9eb"] },
-      "ground": { "role": "neutral", "displayName": "Grafito", "canonical": "#0e1217", "tonalRamp": ["#0e1217", "#171c23", "#202732", "#2b333e", "#4a5461", "#6f7a88", "#a8b2bf", "#e8edf3"] },
-      "paper": { "role": "neutral", "displayName": "Papel Grafito", "canonical": "#171c23", "tonalRamp": ["#0e1217", "#171c23", "#202732", "#2b333e", "#3a4552", "#4a5461", "#6f7a88", "#a8b2bf"] },
-      "ink": { "role": "neutral", "displayName": "Texto", "canonical": "#e8edf3", "tonalRamp": ["#4a5461", "#6f7a88", "#8d98a6", "#a8b2bf", "#c2cad4", "#d6dce4", "#e8edf3", "#f5f7fa"] }
+      "accent": { "role": "primary", "displayName": "Verde Estación", "canonical": "#5cff9d", "tonalRamp": ["#04130a", "#0a3d1f", "#12662f", "#1f9a4d", "#3bd172", "#5cff9d", "#a6ffc9", "#e3fff0"] },
+      "accent-ink": { "role": "primary", "displayName": "Tinta Verde", "canonical": "#04130a", "tonalRamp": ["#020a05", "#04130a", "#0a2a15", "#12401f", "#1d5a30", "#2f7a47", "#5a9f72", "#a3cdb2"] },
+      "ground": { "role": "neutral", "displayName": "Negro Casi Puro", "canonical": "#0a0a0a", "tonalRamp": ["#0a0a0a", "#111214", "#181a1d", "#25272a", "#3a3d42", "#6b6e73", "#a3a6ab", "#fafafa"] },
+      "surface": { "role": "neutral", "displayName": "Superficie", "canonical": "#111214", "tonalRamp": ["#0a0a0a", "#111214", "#181a1d", "#25272a", "#3a3d42", "#55585d", "#8b8f95", "#a3a6ab"] },
+      "surface-2": { "role": "neutral", "displayName": "Superficie 2", "canonical": "#181a1d", "tonalRamp": ["#0a0a0a", "#111214", "#181a1d", "#25272a", "#33363a", "#3a3d42", "#8b8f95", "#a3a6ab"] },
+      "ink": { "role": "neutral", "displayName": "Blanco", "canonical": "#fafafa", "tonalRamp": ["#55585d", "#6b6e73", "#8b8f95", "#a3a6ab", "#c4c6ca", "#e0e1e3", "#f2f2f3", "#fafafa"] },
+      "ink-2": { "role": "neutral", "displayName": "Gris Suave", "canonical": "#a3a6ab", "tonalRamp": ["#25272a", "#3a3d42", "#55585d", "#6b6e73", "#8b8f95", "#a3a6ab", "#c4c6ca", "#e0e1e3"] },
+      "rule": { "role": "neutral", "displayName": "Filete", "canonical": "#25272a", "tonalRamp": ["#0a0a0a", "#111214", "#181a1d", "#1e2023", "#25272a", "#2e3033", "#3a3d42", "#55585d"] },
+      "rail": { "role": "neutral", "displayName": "Riel", "canonical": "#3a3d42", "tonalRamp": ["#111214", "#181a1d", "#25272a", "#2e3033", "#3a3d42", "#55585d", "#6b6e73", "#8b8f95"] },
+      "stop-ring": { "role": "neutral", "displayName": "Aro de Parada", "canonical": "#8b8f95", "tonalRamp": ["#25272a", "#3a3d42", "#55585d", "#6b6e73", "#8b8f95", "#a3a6ab", "#c4c6ca", "#e0e1e3"] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "h1 de portada y de servicio, mayúsculas, Barlow Condensed 800." },
-      "headline": { "displayName": "Headline", "purpose": "h2 de sección en mayúsculas." },
-      "title": { "displayName": "Title", "purpose": "Paradas, estaciones, pasos y preguntas." },
-      "body": { "displayName": "Body", "purpose": "Texto corrido en Atkinson Hyperlegible, máx. 68ch." },
-      "label": { "displayName": "Label", "purpose": "Botones, nombres de línea y navegación." }
+      "display": { "displayName": "Display", "purpose": "h1 de portada, servicio y cierre; Geist 500, sentence case, -0.04em." },
+      "headline": { "displayName": "Headline", "purpose": "h2 de sección y h3 de banda." },
+      "title": { "displayName": "Title", "purpose": "Pasos, modos, estaciones y título de la terminal." },
+      "body": { "displayName": "Body", "purpose": "Texto corrido en Geist 400, máx. 64ch, gris suave en secundarios." },
+      "label": { "displayName": "Label", "purpose": "Botones, navegación y chips de servicio." }
     },
     "shadows": [
-      { "name": "focus-ring", "value": "outline: 3px solid #e4ecf6; outline-offset: 3px", "purpose": "Foco visible por teclado; único realce de interacción." },
-      { "name": "band-rail", "value": "inset 0 10px 0 var(--k)", "purpose": "Riel de color superior de las bandas de índice (12px en cabeceras de página)." },
-      { "name": "stop-selected", "value": "0 0 0 4px #171c23, 0 0 0 7px var(--k)", "purpose": "Anillos de la parada elegida." },
-      { "name": "ghost-outline", "value": "inset 0 0 0 2px #e8edf3", "purpose": "Contorno del botón fantasma." }
+      { "name": "card-float", "value": "0 24px 48px rgba(0,0,0,0.55)", "purpose": "Tarjetas 3D de la portada y foto inclinada de cabecera; en hover 0 30px 60px rgba(0,0,0,0.7)." },
+      { "name": "stop-glow", "value": "0 0 0 5px rgba(92,255,157,0.16), 0 0 18px rgba(92,255,157,0.5)", "purpose": "Halo verde de la parada elegida." },
+      { "name": "orb-glow", "value": "0 0 28px rgba(92,255,157,0.35)", "purpose": "Brillo del orbe de la estación." },
+      { "name": "ghost-outline", "value": "inset 0 0 0 1px rgba(255,255,255,0.28)", "purpose": "Contorno del botón fantasma; hover a blanco pleno." },
+      { "name": "focus-ring", "value": "outline: 2px solid #5cff9d; outline-offset: 3px", "purpose": "Foco visible por teclado." }
     ],
     "motion": [
-      { "name": "ease", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Easing único para pulsación, hover, cajón y estados de parada." },
-      { "name": "press", "value": "140ms", "purpose": "Botón: escala 0.97 y color." },
-      { "name": "drawer", "value": "200ms", "purpose": "Cajón de navegación: opacidad y desplazamiento de 8 px; visibilidad con retardo de 200 ms al cerrar. También menú y flecha de banda." },
-      { "name": "state", "value": "120–220ms", "purpose": "Parada, banda, signo del FAQ." },
+      { "name": "ease", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Easing único de la interfaz y del escenario 3D." },
+      { "name": "press", "value": "140ms", "purpose": "Botón: escala 0.97, color y halo." },
+      { "name": "drawer", "value": "200ms", "purpose": "Cajón móvil: fundido y 8 px de desplazamiento; icono del menú." },
+      { "name": "stage", "value": "400–600ms", "purpose": "Tarjetas (400ms) y contenedor que sigue al puntero (600ms)." },
+      { "name": "deriva", "value": "14s ease-in-out infinite alternate", "purpose": "Deriva lenta del escenario entre ±8° en Y y ±2° en X; solo con prefers-reduced-motion: no-preference y se cancela al mover el ratón." },
       { "name": "reduced-motion", "value": "0.01ms", "purpose": "Con prefers-reduced-motion: reduce, transiciones y animaciones bajan a 0.01ms y el scroll suave se desactiva." }
     ],
     "breakpoints": [
@@ -42,110 +45,100 @@
   },
   "components": [
     {
-      "name": "Botón WhatsApp",
+      "name": "Botón primario",
       "kind": "button",
-      "refersTo": "button-wa",
-      "description": "Acción principal, hielo con Tinta de Hielo.",
-      "html": "<a class=\"ds-btn-wa\" href=\"#\">Escribir por WhatsApp</a>",
-      "css": ".ds-btn-wa{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#e4ecf6;color:#0b0f14;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:.01em;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),background-color 140ms cubic-bezier(.23,1,.32,1)}.ds-btn-wa:active{transform:scale(.97)}.ds-btn-wa:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px}"
-    },
-    {
-      "name": "Botón oscuro",
-      "kind": "button",
-      "refersTo": "button-ink",
-      "description": "Acción secundaria oscura (Llamar).",
-      "html": "<a class=\"ds-btn-ink\" href=\"#\">Llamar</a>",
-      "css": ".ds-btn-ink{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#0b0f14;color:#e8edf3;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),background-color 140ms cubic-bezier(.23,1,.32,1)}.ds-btn-ink:hover{background:#1c2430}.ds-btn-ink:active{transform:scale(.97)}.ds-btn-ink:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px}"
+      "refersTo": "button-primary",
+      "description": "Píldora blanca, acción principal (WhatsApp, Enviar).",
+      "html": "<a class=\"ds-btn\" href=\"#\">Escribir por WhatsApp</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;background:#fafafa;color:#0a0a0a;border-radius:999px;font-family:'Geist','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:1rem;letter-spacing:-0.01em;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),box-shadow 140ms cubic-bezier(.23,1,.32,1)}.ds-btn:hover{background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.12)}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid #5cff9d;outline-offset:3px;border-radius:999px}"
     },
     {
       "name": "Botón fantasma",
       "kind": "button",
       "refersTo": "button-ghost",
-      "description": "Acción terciaria con contorno de texto.",
-      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Ver servicios</a>",
-      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:transparent;color:#e8edf3;box-shadow:inset 0 0 0 2px #e8edf3;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;text-decoration:none;transition:background-color 140ms cubic-bezier(.23,1,.32,1),color 140ms cubic-bezier(.23,1,.32,1)}.ds-btn-ghost:hover{background:#e8edf3;color:#0b0f14}.ds-btn-ghost:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px}"
+      "description": "Acción secundaria con contorno interior (Llamar).",
+      "html": "<a class=\"ds-ghost\" href=\"#\">Llamar</a>",
+      "css": ".ds-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;background:transparent;color:#fafafa;box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);border-radius:999px;font-family:'Geist','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:1rem;letter-spacing:-0.01em;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1),box-shadow 140ms cubic-bezier(.23,1,.32,1)}.ds-ghost:hover{box-shadow:inset 0 0 0 1px #fafafa}.ds-ghost:active{transform:scale(.97)}.ds-ghost:focus-visible{outline:2px solid #5cff9d;outline-offset:3px}"
     },
     {
-      "name": "Chip de línea",
+      "name": "Chip de servicio",
       "kind": "chip",
-      "refersTo": "line-chip",
-      "description": "Nombre de línea en su color, con texto Tinta de Hielo.",
-      "html": "<a class=\"ds-line-chip\" href=\"#\">Mantenimiento</a>",
-      "css": ".ds-line-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;background:#4f8cff;color:#0b0f14;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;text-decoration:none}.ds-line-chip:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px}"
+      "refersTo": "chip-service",
+      "description": "Nombre de línea de servicio con contorno gris sobre el riel.",
+      "html": "<a class=\"ds-chip\" href=\"#\">Mantenimiento y reparación</a>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;min-height:36px;padding:6px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px #3a3d42;color:#fafafa;font-family:'Geist','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:.95rem;letter-spacing:-0.01em;text-decoration:none;transition:box-shadow 140ms cubic-bezier(.23,1,.32,1)}.ds-chip:hover{box-shadow:inset 0 0 0 1px #fafafa}.ds-chip:focus-visible{outline:2px solid #5cff9d;outline-offset:3px}"
     },
     {
       "name": "Parada",
       "kind": "custom",
-      "refersTo": "line-azul",
-      "description": "Síntoma seleccionable sobre el riel; hueco = disponible, lleno = elegida.",
-      "html": "<div class=\"ds-rail\"><button class=\"ds-stop\" aria-pressed=\"true\"><span class=\"ds-dot\"></span><span class=\"ds-txt\">No enciende</span></button></div>",
-      "css": ".ds-rail{position:relative;--k:#4f8cff;color:#e8edf3}.ds-rail::before{content:'';position:absolute;left:11px;top:14px;bottom:14px;width:10px;background:var(--k);border-radius:5px}.ds-stop{position:relative;display:flex;align-items:center;gap:16px;min-height:52px;background:none;border:0;cursor:pointer;color:#e8edf3;text-align:left}.ds-dot{width:32px;height:32px;display:grid;place-items:center}.ds-dot::before{content:'';width:22px;height:22px;border-radius:50%;background:#171c23;border:5px solid #e8edf3;transition:background-color 120ms cubic-bezier(.23,1,.32,1),transform 160ms cubic-bezier(.23,1,.32,1)}.ds-stop[aria-pressed='true'] .ds-dot::before{background:#e8edf3;transform:scale(1.12);box-shadow:0 0 0 4px #171c23,0 0 0 7px var(--k)}.ds-txt{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:1.32rem}.ds-stop[aria-pressed='true'] .ds-txt{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px;text-decoration-color:var(--k)}.ds-stop:hover .ds-dot::before{transform:scale(1.12)}.ds-stop:focus-visible{outline:3px solid #e4ecf6;outline-offset:3px;border-radius:6px}"
+      "refersTo": "accent",
+      "description": "Síntoma seleccionable sobre el riel; aro gris = disponible, verde con halo = elegida.",
+      "html": "<div class=\"ds-rail\"><button class=\"ds-stop\" aria-pressed=\"true\"><span class=\"ds-dot\"></span><span class=\"ds-txt\">No enciende<small>No da imagen o no prende</small></span></button></div>",
+      "css": ".ds-rail{position:relative;color:#fafafa}.ds-rail::before{content:'';position:absolute;left:15px;top:20px;bottom:20px;width:2px;background:#3a3d42}.ds-stop{position:relative;display:flex;align-items:flex-start;gap:14px;min-height:56px;padding:10px 8px 10px 0;background:none;border:0;cursor:pointer;color:#fafafa;text-align:left;font:inherit}.ds-dot{flex:none;width:32px;height:28px;display:grid;place-items:center}.ds-dot::before{content:'';width:14px;height:14px;border-radius:50%;background:#0a0a0a;border:2px solid #8b8f95;transition:background-color 160ms cubic-bezier(.23,1,.32,1),transform 160ms cubic-bezier(.23,1,.32,1),box-shadow 200ms cubic-bezier(.23,1,.32,1)}.ds-stop[aria-pressed='true'] .ds-dot::before{background:#5cff9d;border-color:#5cff9d;transform:scale(1.2);box-shadow:0 0 0 5px rgba(92,255,157,.16),0 0 18px rgba(92,255,157,.5)}.ds-stop:hover .ds-dot::before{border-color:#fafafa}.ds-txt{font-weight:500;font-size:1.1rem;line-height:1.3;letter-spacing:-0.02em}.ds-txt small{display:block;font-weight:400;font-size:.95rem;color:#a3a6ab;margin-top:2px}.ds-stop:focus-visible{outline:2px solid #5cff9d;outline-offset:3px;border-radius:8px}"
     },
     {
-      "name": "Estación terminal",
+      "name": "Terminal (estación)",
       "kind": "card",
-      "refersTo": "terminal",
-      "description": "Bloque hielo donde convergen las líneas; envía el viaje por WhatsApp.",
-      "html": "<div class=\"ds-terminal\"><h3>Pedro Roa</h3><label for=\"n\">Tu nombre</label><input id=\"n\" placeholder=\"Nombre\"><a class=\"ds-send\" href=\"#\">Enviar a Pedro</a></div>",
-      "css": ".ds-terminal{background:#e4ecf6;color:#0b0f14;border-radius:18px;padding:22px 18px 20px}.ds-terminal h3{margin:0 0 10px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:2.1rem;line-height:1;text-transform:uppercase}.ds-terminal label{display:block;font-weight:700;font-size:.95rem;margin-bottom:6px}.ds-terminal input{width:100%;min-height:48px;padding:0 14px;border:2px solid #0b0f14;border-radius:10px;background:#fff;font:inherit;color:#0b0f14}.ds-terminal input::placeholder{color:#5d6672}.ds-terminal input:focus-visible{outline:3px solid #0b0f14;outline-offset:3px}.ds-send{display:flex;align-items:center;justify-content:center;min-height:52px;margin-top:12px;background:#0b0f14;color:#e8edf3;border-radius:999px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;text-decoration:none;transition:transform 140ms cubic-bezier(.23,1,.32,1)}.ds-send:active{transform:scale(.97)}"
+      "refersTo": "panel-terminal",
+      "description": "Panel con orbe verde, viaje en puntos verdes, campo y botón de WhatsApp.",
+      "html": "<div class=\"ds-terminal\"><div class=\"ds-head\"><span class=\"ds-orb\"></span><h3>Pedro Roa</h3><p>Estación final · Bogotá</p></div><ul><li>No enciende</li></ul><label for=\"n\">Marca y modelo de tu equipo (opcional)</label><input id=\"n\" placeholder=\"Ej. Lenovo IdeaPad 3\"><a class=\"ds-btn\" href=\"#\">Enviar por WhatsApp</a></div>",
+      "css": ".ds-terminal{background:#111214;color:#fafafa;border:1px solid #25272a;border-radius:20px;padding:24px 20px 22px;font-family:'Geist','Helvetica Neue',Arial,sans-serif}.ds-head{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center}.ds-orb{grid-row:1/span 2;width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 34% 28%,#fff 0,#c8ffe0 14%,#4dff93 42%,#0a3d1f 78%,#040806 100%);box-shadow:0 0 28px rgba(92,255,157,.35)}.ds-terminal h3{margin:0;font-weight:500;font-size:2rem;line-height:1.02;letter-spacing:-0.04em}.ds-head p{margin:0;color:#a3a6ab;font-size:.95rem}.ds-terminal ul{list-style:none;margin:18px 0 16px;padding:0}.ds-terminal li{display:flex;gap:10px;align-items:baseline}.ds-terminal li::before{content:'';flex:none;width:7px;height:7px;border-radius:50%;background:#5cff9d}.ds-terminal label{display:block;font-weight:500;font-size:.95rem;margin-bottom:8px}.ds-terminal input{width:100%;min-height:50px;padding:0 16px;border:1px solid #34373c;border-radius:12px;background:#0a0a0a;color:#fafafa;font:inherit}.ds-terminal input:focus-visible{outline:none;border-color:#5cff9d}.ds-terminal .ds-btn{display:flex;margin-top:14px}"
     },
     {
-      "name": "Banda de índice",
+      "name": "Tarjeta flotante",
+      "kind": "custom",
+      "refersTo": "card-float",
+      "description": "Tarjeta de servicio inclinada en perspectiva; hover la adelanta y la endereza. En producción vive dentro de un escenario con perspective:1100px.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-float\" href=\"#\"><i></i><b>Software y licencias</b></a></div>",
+      "css": ".ds-stage{perspective:1100px;padding:24px;transform-style:preserve-3d}.ds-float{position:relative;display:grid;align-content:end;width:260px;aspect-ratio:16/10;padding:14px 16px;border-radius:14px;overflow:hidden;background:linear-gradient(160deg,#1a1d21,#0d0e10);border:1px solid rgba(255,255,255,.1);box-shadow:0 24px 48px rgba(0,0,0,.55);color:#fafafa;text-decoration:none;transform:translateZ(40px) rotateY(16deg) rotateZ(-5deg);transition:transform 400ms cubic-bezier(.23,1,.32,1),box-shadow 400ms cubic-bezier(.23,1,.32,1)}.ds-float i{position:absolute;top:14px;left:16px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 34% 28%,#fff 0,#c8ffe0 16%,#4dff93 46%,#0a3d1f 100%)}.ds-float b{font-family:'Geist','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:1.2rem;line-height:1.05;letter-spacing:-0.04em}.ds-float:hover,.ds-float:focus-visible{transform:translateZ(110px) rotateY(0) rotateZ(0);box-shadow:0 30px 60px rgba(0,0,0,.7)}.ds-float:focus-visible{outline:2px solid #5cff9d;outline-offset:4px}@media (prefers-reduced-motion:reduce){.ds-float{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Banda de servicio",
       "kind": "nav",
       "refersTo": "banda",
-      "description": "Banda oscura de ancho completo con riel de color arriba que enlaza a cada servicio.",
-      "html": "<a class=\"ds-banda\" href=\"#\"><h3>A la medida</h3><p>Armado y mejoras de PC.</p><span class=\"ds-ir\">Ver ruta</span></a>",
-      "css": ".ds-banda{--k:#e5a23c;display:grid;gap:14px;padding:34px 16px 22px;background:#171c23;color:#e8edf3;text-decoration:none;border-top:1px solid #2b333e;box-shadow:inset 0 10px 0 var(--k);transition:background-color 160ms cubic-bezier(.23,1,.32,1)}.ds-banda:hover{background:#202732}.ds-banda h3{margin:0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:2.4rem;line-height:1;text-transform:uppercase}.ds-banda p{margin:0;font-size:1.05rem}.ds-ir{color:var(--k);font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase}.ds-banda:focus-visible{outline:3px solid #e4ecf6;outline-offset:-6px}"
-    },
-    {
-      "name": "Cabecera de página",
-      "kind": "custom",
-      "refersTo": "page-header",
-      "description": "Cabecera oscura de página de servicio con riel de color de 12 px arriba.",
-      "html": "<header class=\"ds-p-hero\"><h1>Computadores a la medida</h1><p>Armado, mejoras y GPU.</p></header>",
-      "css": ".ds-p-hero{--c:#e5a23c;background:#171c23;color:#e8edf3;box-shadow:inset 0 12px 0 var(--c);padding:52px 16px 40px;border-bottom:1px solid #2b333e}.ds-p-hero h1{margin:0;max-width:16ch;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(2.6rem,9.5vw,5.4rem);line-height:.92;text-transform:uppercase}.ds-p-hero p{margin:18px 0 0;font-size:1.2rem;max-width:52ch}"
+      "description": "Fila de ancho completo con filete superior y flecha que se desplaza en hover.",
+      "html": "<a class=\"ds-banda\" href=\"#\"><h3>PC a la medida y GPU</h3><p>Computadores armados según lo que haces.</p><span class=\"ds-ir\">Ver la línea →</span></a>",
+      "css": ".ds-banda{display:grid;gap:14px;padding:30px 20px;color:#fafafa;text-decoration:none;border-top:1px solid #25272a;font-family:'Geist','Helvetica Neue',Arial,sans-serif;transition:background-color 200ms cubic-bezier(.23,1,.32,1)}.ds-banda:hover{background:#111214}.ds-banda h3{margin:0;font-weight:500;font-size:clamp(1.9rem,5.5vw,2.7rem);line-height:1.02;letter-spacing:-0.04em}.ds-banda p{margin:0;color:#a3a6ab;font-size:1.05rem}.ds-ir{font-weight:500}.ds-banda:focus-visible{outline:2px solid #5cff9d;outline-offset:-6px}"
     },
     {
       "name": "Cajón de navegación",
       "kind": "nav",
       "refersTo": "ground",
-      "description": "Cajón móvil: entra con fundido y 8 px de desplazamiento en 200 ms; filas de 64 px con barra de color por línea.",
-      "html": "<nav class=\"ds-drawer\"><a href=\"#\"><i></i>Mantenimiento</a><a href=\"#\"><i></i>A la medida</a></nav>",
-      "css": ".ds-drawer{background:#0e1217;padding:16px;transition:opacity 200ms cubic-bezier(.23,1,.32,1),transform 200ms cubic-bezier(.23,1,.32,1)}.ds-drawer a{display:flex;align-items:center;gap:14px;min-height:64px;border-bottom:1px solid #2b333e;color:#e8edf3;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:1.7rem;text-transform:uppercase;text-decoration:none}.ds-drawer i{width:14px;align-self:stretch;margin-block:12px;border-radius:7px;background:#4f8cff;flex:none}.ds-drawer a:nth-child(2) i{background:#e5a23c}.ds-drawer a:focus-visible{outline:3px solid #e4ecf6;outline-offset:-3px}@media (prefers-reduced-motion:reduce){.ds-drawer{transition-duration:.01ms}}"
+      "description": "Cajón móvil: entra con fundido y 8 px de desplazamiento en 200 ms; filas de 68 px.",
+      "html": "<nav class=\"ds-drawer\"><a href=\"#\">Mantenimiento</a><a href=\"#\">PC a la medida</a></nav>",
+      "css": ".ds-drawer{background:#0a0a0a;padding:12px 20px;transition:opacity 200ms cubic-bezier(.23,1,.32,1),transform 200ms cubic-bezier(.23,1,.32,1)}.ds-drawer a{display:flex;align-items:center;min-height:68px;border-bottom:1px solid #25272a;color:#fafafa;font-family:'Geist','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:1.7rem;letter-spacing:-0.04em;text-decoration:none}.ds-drawer a:focus-visible{outline:2px solid #5cff9d;outline-offset:-3px}@media (prefers-reduced-motion:reduce){.ds-drawer{transition-duration:.01ms}}"
     }
   ],
   "narrative": {
-    "northStar": "El Diagrama de Rutas",
-    "overview": "El sitio se lee como el plano de un sistema de transporte público: cada síntoma es una parada, cada servicio es una línea de color, y las cuatro líneas llegan a una sola estación terminal, Pedro. La superficie es un grafito azulado (#0e1217) con texto casi blanco; el color vive solo en los rieles de las cuatro líneas y en un único acento hielo. Es señalética nocturna: sobria, directa, legible en el celular.\n\nLa densidad es baja y la jerarquía es de rótulo: títulos condensados en mayúsculas, texto largo en una sans de máxima legibilidad. La profundidad es tonal: tres escalones de grafito (fondo, papel, superficie 2) separados por filetes de 1 px, sin sombras de elevación. Las bandas de índice y las cabeceras de página son oscuras con un riel de color en el borde superior; el color de línea nunca llena un bloque grande.",
+    "northStar": "El Diagrama de Rutas, de noche",
+    "overview": "El sitio conserva la idea de un plano de rutas (síntomas como paradas, una estación final, Pedro), pero ahora la interfaz es monocroma: negro casi puro (#0a0a0a) con una cuadrícula de 56 px apenas visible detrás de la portada, texto blanco y una sola tipografía, Geist, fina y apretada. El color no vive en la interfaz: viene de las fotos de los servicios. El único color de marca es un verde luminoso que se enciende solo cuando el visitante elige algo.\n\nLa densidad es baja y la jerarquía sale del tamaño y del contraste (blanco frente a gris), no de mayúsculas ni de rótulos. Los servicios de la portada flotan como tarjetas inclinadas en perspectiva 3D, siguen al puntero y derivan despacio solas; son la única pieza espectacular, y todo lo demás es plano y quieto.",
     "keyCharacteristics": [
-      "Cuatro líneas de color en tonos sobrios de indicador (azul, ámbar, verde agua, coral), con una sola activa por página mediante --c / --k.",
-      "Un solo acento, hielo (#e4ecf6), para el botón principal de WhatsApp, la estación terminal y la banda de cierre.",
-      "Rieles de 10 px con paradas circulares con aro: hueco = disponible, lleno = elegida.",
-      "Bandas y cabeceras oscuras con riel de color arriba (10 px en bandas, 12 px en cabeceras de página).",
-      "Móvil primero: barra fija inferior con WhatsApp y Llamar, objetivos táctiles de 44 px o más."
+      "Interfaz monocroma sobre #0a0a0a; el verde (#5cff9d) aparece solo en paradas elegidas, puntos del mensaje, el orbe de la estación, foco y selección de texto.",
+      "Geist variable, sentence case, tracking -0.04em en títulos.",
+      "Botones en píldora blancos; el contorno fantasma como alternativa.",
+      "Tarjetas de servicio en 3D con parallax por puntero y deriva lenta, detenida con prefers-reduced-motion.",
+      "Móvil primero: barra fija inferior con WhatsApp y Llamar, objetivos de 44 px o más (salvo las excepciones anotadas)."
     ],
     "rules": [
-      { "name": "The Un-Solo-Hielo Rule", "body": "El hielo es el único acento: señala la acción y la estación final. No se usa para resaltar titulares ni como relleno decorativo, y no se añade un segundo acento.", "section": "colors" },
-      { "name": "The Línea-Por-Página Rule", "body": "Una página de servicio usa una sola línea de color (data-line); el resto del chrome es grafito y texto.", "section": "colors" },
-      { "name": "The Riel-No-Relleno Rule", "body": "El color de línea aparece como riel, punto, chip o aro; las bandas y cabeceras no se rellenan con él.", "section": "colors" },
-      { "name": "The Rótulo Rule", "body": "Display y títulos van en Barlow Condensed en mayúsculas; el texto corrido nunca va en condensada.", "section": "typography" },
-      { "name": "The Tono-No-Sombra Rule", "body": "Separa superficies con un escalón de grafito o un filete de 1 px; el anillo de foco (outline de 3 px en hielo, offset 3 px) es el único realce de interacción.", "section": "elevation" }
+      { "name": "The Verde-Que-Se-Gana Rule", "body": "El verde solo se enciende como respuesta a una elección del visitante (parada, punto del mensaje) o como marca de la estación (orbe). No colorea titulares, botones, enlaces ni rellenos decorativos.", "section": "colors" },
+      { "name": "The Interfaz-Monocroma Rule", "body": "Todo lo demás es negro, gris o blanco; el color entra por las fotos y la esfera verde de las tarjetas de texto.", "section": "colors" },
+      { "name": "The Apretado-Fino Rule", "body": "Todo título de h1 a h4 va en peso 500 con tracking -0.04em y sentence case; nunca mayúsculas ni negritas pesadas.", "section": "typography" },
+      { "name": "The Profundidad-Solo-En-La-Portada Rule", "body": "Perspectiva, inclinación y sombra amplia pertenecen a las tarjetas de servicio y a la foto de cabecera; paneles, bandas y campos se quedan planos.", "section": "elevation" }
     ],
     "dos": [
-      "Do usar una sola línea de color por página de servicio y el hielo solo en la acción principal, la estación final y el cierre.",
-      "Do mantener objetivos táctiles de 44 px o más y la acción de WhatsApp a un toque (barra fija en celular).",
-      "Do estructurar con escalones de grafito, filetes de 1 px, rieles de 10 px y paradas con aro.",
-      "Do dar a bandas y cabeceras fondo oscuro con riel de color arriba.",
-      "Do poner las fotos en monocromo.",
-      "Do usar el easing cubic-bezier(0.23, 1, 0.32, 1) con duraciones de 120–220 ms y respetar prefers-reduced-motion."
+      "Do usar solo negro, grises y blanco en la interfaz y reservar el verde (#5cff9d) para elecciones del visitante y la estación.",
+      "Do componer títulos en Geist 500, sentence case y tracking -0.04em.",
+      "Do hacer los botones en píldora blanca (52 px) y la acción de WhatsApp a un toque.",
+      "Do limitar la profundidad 3D y la sombra amplia a las tarjetas flotantes y la foto de cabecera.",
+      "Do dejar el color a las fotos y mantener las fotos de sección en escala de grises.",
+      "Do respetar prefers-reduced-motion y usar el easing cubic-bezier(0.23, 1, 0.32, 1)."
     ],
     "donts": [
-      "Don't llenar bandas o cabeceras con un color de línea saturado.",
-      "Don't añadir un segundo acento ni volver al amarillo anterior.",
-      "Don't usar la plantilla oscura «terminal/cyber» con tarjetas iguales de icono.",
+      "Don't pintar botones, enlaces o titulares de verde ni añadir un segundo acento.",
+      "Don't volver a las cuatro líneas de color, a Barlow Condensed, a Atkinson ni a los títulos en mayúsculas del sistema anterior.",
       "Don't poner cifras, métricas o reseñas inventadas en la interfaz.",
-      "Don't usar sombras de elevación; usa un escalón de grafito o un filete.",
-      "Don't componer texto corrido en Barlow Condensed."
+      "Don't aplicar perspectiva o inclinación a paneles, bandas, campos o texto corrido.",
+      "Don't hacer depender la tarjeta 3D del puntero: debe funcionar con el dedo y con teclado (foco)."
     ]
   }
 }
